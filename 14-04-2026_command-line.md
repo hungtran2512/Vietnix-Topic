@@ -90,12 +90,17 @@
     + `tail -f`: mở file và theo dõi trực tiếp nếu nội file thay đổi. Sẽ gây tốn tài nguyên
     + `tailf`: được tối ưu hóa để theo dõi file log
 
-- Sed Command:
-    + Find and replace string trong file: 
+## - Sed Command:
+  - Find and replace string trong file: `sed -i 's/text cũ/text mới/g' file.txt`
+    + `s`: dùng để thay thế từ đầu tiên tìm thấy trên mỗi dòng
+    + `g`: dùng để thay thế tất cả cụm từ khớp tìm thấy trên cùng một dòng
 
-- Traceroute/Tracert Command:
-    + Thực hiện và giải thích kết quả.
-
+## - Traceroute/Tracert Command:
+  <img width="953" height="340" alt="image" src="https://github.com/user-attachments/assets/e783f64a-a2d5-4e1a-b1e1-6275253a15ab" />
+  + Target: ang truy vấn đến IP 14.225.253.240.
+  + 30 hops max: Giới hạn tối đa 30 trạm trung chuyển. Nếu quá 30 trạm mà chưa tới đích, lệnh sẽ dừng.
+  + 60 byte packets: Kích thước mỗi gói tin thăm dò là 60 byte.
+      
 - Netstat Command:
     + Hiển thị các socket đang listen.
     + Không resolve hostname.
