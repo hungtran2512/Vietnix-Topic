@@ -22,18 +22,41 @@
     + `rtt=`: thời gian phản hồi trong khoảng 3ms - 5ms -> khoảng cách địa lý giữa máy ping và server là gần nhau 
 
 ## - SSH Command:
-  - Kết nối bằng password: cú pháp là
-  - Kết nối bằng key.
-  - Kết nối bằng port custom.
+  - Dùng để kết nối và điều khiển máy chủ từ xa an toàn qua giao thức mã hóa. Lệnh này cho phép quản lý hệ thống, chuyển tệp và thực thi các câu lệnh trên máy chủ từ xa một cách bảo 
+  - Kết nối bằng password: phương thức cơ bản sử dụng định dạng `user@hostname`
+    + Execute: `ssh username@192.168.1.10`
+    + Hệ thống yêu cầu mật khẩu của `username` tại máy chủ `192.168.1.10`. Lần đầu kết nối sẽ có thông báo xác nhận (key fingerprint) -> nhấn `yes` để tiếp tục
+  - Kết nối bằng key: phương thức bảo mật cao hơn, không cần mật khẩu mỗi lần đăng nhập
+    + Tạo cặp khóa: `ssh-keygen -t rsa`
+    + Copy khóa lên server: `ssh-copy-id username@192.168.1.10`
+    + Execute lệnh kết nối `ssh -i ~/.ssh/id_rsa username@192.168.1.10`
+    + `-i` chỉ định đường dẫn đến file private key -> server kiểm tra private key có khớp với public key trong `~/.ssh/id_rsa` không
+  - Kết nối bằng port custom: thay đổi port mặc định để bảo mật hơn (tránh brute-force)
+    + Execute lệnh: `ssh -p 2222 username@192.168.1.10`
+    + `-p 2222` chỉ định port cụ thể của dịch vụ SSH mà server đang lắng nghe
 
-- SCP Command:
-    + Copy 1 file.
-    + Copy 1 folder.
-
-- Rsync Command:
-    + Copy file.
-    + Copy folder.
-    + `rsync incremental`.
+## - SCP Command: 
+  - Dùng để sao chép tệp và thư mục an toàn giữa máy cục bộ và máy chủ từ xa hoặc giữa hai máy chủ qua mạng, sử dụng giao thức SSH để bảo mật. Cú pháp cơ bản là `scp [lựa chọn] [nguồn] [đích]`, hỗ trợ truyền file nhanh chóng, mã hóa dữ liệu.
+  - Copy 1 file:
+    + Sao chép file từ máy cục bộ lên máy chủ từ xa:
+      `scp /path/to/local/file.txt username@remote_host:/path/to/remote/dir/`
+    + Sao chép file từ máy chủ từ xa về máy cục bộ:
+      `scp username@remote_host:/path/to/remote/file.txt /path/to/local/dir/`
+  - Copy 1 folder:
+    + Sao chép thư mục (bao gồm tất cả file bên trong):
+      `scp -r /path/to/local/dir/ username@remote_host:/path/to/remote/dir/`
+      
+## - Rsync Command:
+  - Dùng để đồng bộ và sao lưu tệp/thư mục cục bộ hoặc từ xa một cách nhanh chóng. Nó chỉ chuyển đổi các phần khác biệt giúp tiết kiệm băng thông và thời gian. Cú pháp cơ bản là `rsync [options] source destination`
+  - Copy file:
+    + Sao chép tệp tin (Local):
+      `rsync -v /path/to/source_file /path/to/destination`
+  - Copy folder.
+    + Sao chép/Đồng bộ thư mục (bao gồm thư mục con - đệ quy):
+      `rsync -av /path/to/source_folder/ /path/to/destination_folder/`
+  - `rsync incremental`:
+      `rsync -av --update /source/ /destination/`
+    + Tùy chọn -a (archive) kết hợp -v (verbose) và --update đảm bảo chỉ sao chép các tệp mới hơn hoặc chưa có ở đích.
 
 - Cat Command:
     + Xem nội dung 1 file.
