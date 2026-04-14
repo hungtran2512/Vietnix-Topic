@@ -130,26 +130,31 @@
     + Set Immutable Attribute: `chattr +i file.txt`
 
 - Find Command:
-    + Tìm file đuôi `.log`.
-    + Tìm folder tên `abc`.
-    + Tìm file tên `abc`.
-    + Tìm file `abc` và đặt quyền read only.
+    + Tìm file đuôi `.log`: `find . -name "*.log"`
+    + Tìm folder tên `abc`: `find . -type d -name "abc"` 
+    + Tìm file tên `abc`: `find . -typed f -name "abc"`
+    + Tìm file `abc` và đặt quyền read only: `find . -name "abc" -exec chmod 444 {} \;`
 
 - Cp Command:
-    + Copy file.
-    + Copy folder.
+    + Copy file: `cp file1 file2`, copy file1 qua file2
+    + Copy folder: `cp -r folder1 folder2`, copy folder1 qua folder2
 
 - Mv Command:
-    + Di chuyển/đổi tên file/folder.
+    + Di chuyển/đổi tên file/folder: `mv tên_hiện_tại tên_mới`
 
 - Cut Command:
-    + Lấy ký tự thứ `<n>`.
-    + Lấy từ ký tự `<n>` trở về sau.
-    + Lấy đến ký tự thứ `<n>`.
+    + Lấy ký tự thứ `<n>`: `cut -c n file`
+    + Lấy từ ký tự `<n>` trở về sau: `cut -c n-`
+    + Lấy đến ký tự thứ `<n>`: `cut -c -n`
 
 - Dig Command:
     + Kiểm tra record A, MX, NS.
+  <img width="725" height="475" alt="image" src="https://github.com/user-attachments/assets/2afad01f-ab4d-438c-9095-5d85a4200e73" />
+  <img width="870" height="551" alt="image" src="https://github.com/user-attachments/assets/0ead78e7-d2d4-4411-bd67-b9330c6a394b" />
+  <img width="719" height="512" alt="image" src="https://github.com/user-attachments/assets/34649892-9a3b-46c1-a30d-a523cc0b466d" />
+
     + Kiểm tra record A, MX, NS với custom DNS.
+  <img width="869" height="572" alt="image" src="https://github.com/user-attachments/assets/f4abf238-c16c-41b1-9705-02e92b38f404" />
 
 - Tar/Zip/Unzip Command:
     + Nén/giải nén `tar.gz`.
