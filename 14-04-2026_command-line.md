@@ -22,9 +22,9 @@
     + `rtt=`: thời gian phản hồi trong khoảng 3ms - 5ms -> khoảng cách địa lý giữa máy ping và server là gần nhau 
 
 ## - SSH Command:
-    + Kết nối bằng password: cú pháp là
-    + Kết nối bằng key.
-    + Kết nối bằng port custom.
+  - Kết nối bằng password: cú pháp là
+  - Kết nối bằng key.
+  - Kết nối bằng port custom.
 
 - SCP Command:
     + Copy 1 file.
