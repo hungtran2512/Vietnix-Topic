@@ -172,21 +172,35 @@
     + Ví dụ về Sym Link và Hard Link.
 
 - Ls Command:
-    + Liệt kê file/thư mục.
-    + Liệt kê file/thư mục và thuộc tính.
-    + Show file ẩn.
+    + Liệt kê file/thư mục: `ls [file/directory]`
+    + Liệt kê file/thư mục và thuộc tính: `ls -l [file/directory]`
+    + Show file ẩn: `ls -la [file/directory]`
 
 - Ps Command:
-    + Show tiến trình.
-    + Kill tiến trình.
+    + Show tiến trình: `ps aux`, show tiến trình hệ thống
+  <img width="1142" height="291" alt="image" src="https://github.com/user-attachments/assets/6d2a41e4-3139-4283-a584-8eba6f43272f" />
+
+    + Kill tiến trình: `kill -9 <PID>`, PID của tiến trình cần dừng khi dò được từ lệnh `ps aux` hoặc command tìm PID của tiến trình nào đó
 
 - Top Command:
-    + Kiểm tra tài nguyên CPU.
-    + Giải thích các thông số.
+    + Kiểm tra tài nguyên CPU: `top`
+  <img width="1085" height="575" alt="image" src="https://github.com/user-attachments/assets/7a9692f3-e03a-4f6c-bcab-779c74a7f38b" />
+
+    + Giải thích các thông số: `load average`: độ tải hệ thống, hiển thị `%CPU` và `%MEM` được sử dụng. `Tasks`: tổng số task đang chạy 
 
 - Free Command:
-    + Giải thích các thông số về RAM.
+    + Giải thích các thông số về RAM:
+      + total: tổng dung lượng
+      + used: đang sử dụng
+      + free: đang trống
+      + shared: dùng chung
+      + buff/cache: vùng đệm
+      + available: đang khả dụng
+  <img width="821" height="185" alt="image" src="https://github.com/user-attachments/assets/0cd3686a-01f2-4c8b-a353-65c8d72097b0" />
 
 - Df Command:
     + Xem dung lượng disk.
-    + Phân vùng `/` là gì.
+ <img width="652" height="205" alt="image" src="https://github.com/user-attachments/assets/92134301-93a6-4688-bffc-1dc68651018d" />
+ 
+    + Phân vùng `/` là gì: là cấp độ cao nhất trong cấu trúc cây thư mực. Tất cả tệp, thư mục con đều phải nằm bên dưới `/`
+      + Một vài thư mục quan trọng nằm sau `/`: `/etc`, `/var/log`, `/home`, `/root` 
