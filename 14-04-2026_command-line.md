@@ -102,30 +102,32 @@
   + 60 byte packets: Kích thước mỗi gói tin thăm dò là 60 byte.
       
 - Netstat Command:
-    + Hiển thị các socket đang listen.
-    + Không resolve hostname.
-    + Không resolve portname.
-    + Display process name/PID.
-    + Chỉ hiển thị socket TCP.
-    + Chỉ hiển thị socket UDP.
+    + Hiển thị các socket đang listen: `netstat -l`, Chỉ hiển thị các cổng (port) đang ở trạng thái mở cửa để chờ đợi kết nối từ bên ngoài vào.
+    + Không resolve hostname: `netstat -n`, Chỉ hiển thị các cổng (port) đang ở trạng thái mở cửa để chờ đợi kết nối từ bên ngoài vào.
+    + Không resolve portname: `netstat -n`, tương tự như hostname
+    + `netstat -p`, Hiển thị thêm cột PID (Process ID) và tên của chương trình đang chiếm giữ socket đó.
+    + `netstat -at`, Lọc và chỉ hiển thị các kết nối sử dụng giao thức TCP
+    + `netstat -au`, Lọc và chỉ hiển thị các kết nối sử dụng giao thức UDP
 
 - Sort Command:
-    + Theo thứ tự tăng dần.
-    + Theo thứ tự giảm dần.
-    + Theo column.
+    + Theo thứ tự tăng dần: `sort file.txt` (default)
+    + Theo thứ tự giảm dần: `sort -r file.txt`
+    + Theo column: `sort -k2 file.txt`, với cột là -k, và cột là 
 
 - Uniq Command:
-    + Lọc các dòng lặp lại.
-    + Lọc và đếm số lượng dòng lặp lại.
+    + Lọc các dòng lặp lại: `uniq file.txt`
+    + Lọc và đếm số lượng dòng lặp lại: `uniq -c`
 
 - Wc Command:
-    + Đếm số dòng.
-    + Đếm số ký tự.
+    + Đếm số dòng: `wc -l`
+    + Đếm số ký tự: `wc -m`
 
 - Chmod, Chown, Chattr Command:
-    + Phân quyền bằng số và chữ.
-    + Đổi owner user/group.
-    + Set Immutable Attribute.
+    + Phân quyền bằng số và chữ
+      + bằng số: `chmod xxx file.txt`, x sẽ bằng read (4) + write (2) + execute (1)
+      + bằng chữ: `chmod u+rwx,g+rx file.txt`
+    + Đổi owner user/group: `chown user:group file/folder`
+    + Set Immutable Attribute: `chattr +i file.txt`
 
 - Find Command:
     + Tìm file đuôi `.log`.
