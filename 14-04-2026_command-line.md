@@ -58,21 +58,40 @@
       `rsync -av --update /source/ /destination/`
     + Tùy chọn -a (archive) kết hợp -v (verbose) và --update đảm bảo chỉ sao chép các tệp mới hơn hoặc chưa có ở đích.
 
-- Cat Command:
-    + Xem nội dung 1 file.
-    + Xem dòng thứ `<n>` trong file.
-    + Ghi nhiều dòng vào 1 file bằng EOF.
+## - Cat Command:
+  - Dùng để xem, tạo, nối và ghi nội dung tệp tin nhanh chóng ngay trên terminal
+  - Xem nội dung 1 file:
+    + Cú pháp: `cat filename.txt`
+    <img width="402" height="74" alt="image" src="https://github.com/user-attachments/assets/62b94e3a-2026-418c-9766-860ccc108613" />
 
-- Echo Command:
-    + Chèn thêm 1 dòng vào cuối file.
-    + Overwrite nội dung file.
+  - Xem dòng thứ `<n>` trong file:
+    + Cú pháp: `sed -n '2p' filename.txt`
+  <img width="473" height="51" alt="image" src="https://github.com/user-attachments/assets/2d79b80a-88b9-45a9-9dfa-20e91e5e62a9" />
 
-- Tail/Head Command:
-    + Sự khác biệt giữa `tail` và `head`.
-    + Sự khác biệt giữa `tail` và `tailf`.
+  - Ghi nhiều dòng vào 1 file bằng EOF.
+    + Cú pháp: `cat <<EOF > filename.txt` để bắt đầu, khi muốn kết thúc ghi -> gõ `EOF`
+  <img width="482" height="163" alt="image" src="https://github.com/user-attachments/assets/eb80d990-cade-4af0-8c46-2792e59a37cf" />
+
+## - Echo Command:
+  - Chèn thêm 1 dòng vào cuối file.
+    + Cú pháp: `echo "text..." >> file.txt`
+    <img width="562" height="363" alt="image" src="https://github.com/user-attachments/assets/a19e532f-cac1-41fa-9433-1cd647a78793" />
+
+  - Overwrite nội dung file:
+    + Cú pháp: `echo "text..." > file.txt`
+    <img width="560" height="270" alt="image" src="https://github.com/user-attachments/assets/6e4ebd06-6c8e-4313-8ec9-cecdf234f560" />
+
+## - Tail/Head Command:
+  - Sự khác biệt giữa `tail` và `head`: tail dùng để xem các dòng cuối file còn head dùng để xem các dòng đầu file
+    + Cú pháp: `head/tail -n [số dòng muốn xem] file.txt` 
+  <img width="956" height="251" alt="image" src="https://github.com/user-attachments/assets/5a72e6c1-b7f3-4654-808e-e9f26d843dd9" />
+
+  - Sự khác biệt giữa `tail` và `tailf`:
+    + `tail -f`: mở file và theo dõi trực tiếp nếu nội file thay đổi. Sẽ gây tốn tài nguyên
+    + `tailf`: được tối ưu hóa để theo dõi file log
 
 - Sed Command:
-    + Find and replace string trong file.
+    + Find and replace string trong file: 
 
 - Traceroute/Tracert Command:
     + Thực hiện và giải thích kết quả.
