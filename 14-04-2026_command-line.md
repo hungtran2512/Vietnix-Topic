@@ -1,6 +1,6 @@
-**Linux Command Line**
+# **Linux Command Line**
 
-- Ping vietnix.vn và giải thích kết quả lệnh `ping` và `hping3`.
+## - Ping vietnix.vn và giải thích kết quả lệnh `ping` và `hping3`.
   - `ttl=` (time to live) là một số nguyên thể hiện số lượng giới hạn bước nhảy (hop). Ví dụ: là số lượng Router gói tín có thể đi qua trước khi bị hủy bỏ.
     + Mỗi khi gói tin đi qua một Router, giá trị của TTL sẽ trừ đi 1
     + *Mục đích*: ngăn chặn tình trạng gói tin bị lặp trên internet, ước tính được số lượng router đi qua từ máy nguồn đến máy đích
@@ -11,9 +11,18 @@
   - Với kết quả ping vietnix.vn:
     + `ttl=53` có thể tính được gói tin đã đi qua `64 - 53 = 11` thiết bị trung gian (64 là giá trị ttl)
     + Các giá trị `time=` đều dưới 5ms chửng tỏ kết nối mạng tốt và ổn định
- 
-- SSH Command:
-    + Kết nối bằng password.
+
+<img width="888" height="228" alt="image" src="https://github.com/user-attachments/assets/49ca01be-182e-46d3-94c0-6d5a6f576807" />
+  - Với kết quả ping vietnix.vn:
+    + Các giá trị `id=` là số định danh các gói tin
+    + `len=46`: tổng độ dài gói tin phẩn hồi là 46 bytes
+    + `ip=`: địa chỉ IP của máy chủ Vietnix đã trả lời
+    + `ttl=53` có thể tính được gói tin đã đi qua `64 - 53 = 11` thiết bị trung gian (64 là giá trị ttl)
+    + `icmp=`: số tự của gói tin, từ kết quả (bắt đầu từ 0 đến 3) cho thấy các gói tin vế đúng thứ tự
+    + `rtt=`: thời gian phản hồi trong khoảng 3ms - 5ms -> khoảng cách địa lý giữa máy ping và server là gần nhau 
+
+## - SSH Command:
+    + Kết nối bằng password: cú pháp là
     + Kết nối bằng key.
     + Kết nối bằng port custom.
 
