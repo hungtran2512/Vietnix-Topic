@@ -8,8 +8,10 @@
     + *Mục đích*: để đánh giá độ trễ và độ ổn định của mạng, time càng thấp và ít dao động thì kết nối mạng càng tốt và ổn định 
 <img width="644" height="195" alt="image" src="https://github.com/user-attachments/assets/550ee7aa-5f0a-4dcd-841f-a6b1f249b472" />
 
-  - Với kết quả ping vietnix.vn: `ttl=53` có thể tính được gói tin đã đi qua `64 - 53 = 11` thiết bị trung gian (64 là giá trị ttl)   
-
+  - Với kết quả ping vietnix.vn:
+    + `ttl=53` có thể tính được gói tin đã đi qua `64 - 53 = 11` thiết bị trung gian (64 là giá trị ttl)
+    + Các giá trị `time=` đều dưới 5ms chửng tỏ kết nối mạng tốt và ổn định
+ 
 - SSH Command:
     + Kết nối bằng password.
     + Kết nối bằng key.
