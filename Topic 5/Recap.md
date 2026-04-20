@@ -1,4 +1,4 @@
-# Recap Topic 5: Website Migration (VPS to cPanel)
+# Recap Topic 5: cPanel
 
 ## 1. Nội dung đã thực hiện
 * **Giai đoạn 1: Đóng gói:** Nén mã nguồn bằng lệnh `tar` và xuất cơ sở dữ liệu bằng `mysqldump` từ VPS đã làm ở (Topic 4).
