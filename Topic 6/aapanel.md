@@ -1,4 +1,4 @@
-# AAPanel
+<img width="813" height="638" alt="image" src="https://github.com/user-attachments/assets/7af725d5-52c0-4fe8-bb0d-297e1ab8e9ce" /># AAPanel
 aaPanel là bảng điều khiển (control panel) quản trị VPS/Server miễn phí, mã nguồn mở, giúp quản lý website, database, FTP, và file qua giao diện đồ họa trực quan (GUI) thay vì dòng lệnh. Được phát triển bởi BT.cn, đây là phiên bản quốc tế của BAOTA Panel, tối ưu hóa cho Linux với cơ chế cài đặt phần mềm "một cú nhấp chuột" (one-click). 
 Các đặc điểm chính của aaPanel:
   - Miễn phí & Dễ sử dụng: phù hợp cho người mới bắt đầu quản trị server.
@@ -42,5 +42,14 @@ Các đặc điểm chính của aaPanel:
     + Chọn quick install sau đó nhấn nút "One-click"
   <img width="978" height="735" alt="image" src="https://github.com/user-attachments/assets/459779bd-10ab-4992-8dff-671609a53e20" />
   <img width="802" height="599" alt="image" src="https://github.com/user-attachments/assets/547775d7-c8e1-4ecb-93f7-8eb8f10e7f03" />
+  <img width="802" height="320" alt="image" src="https://github.com/user-attachments/assets/52166c64-da22-4089-8c03-24e04bd41fa6" />
 
+# Tạo website wordpress
+- Ở thanh menu bên trái màn hình chọn `Website` -> chọn `Add site`
+    <img width="201" height="216" alt="image" src="https://github.com/user-attachments/assets/758f1aba-0ab2-4e24-819d-cb69660b0d4b" />
+    <img width="285" height="135" alt="image" src="https://github.com/user-attachments/assets/0bf3c26d-8a49-49f6-b823-ba482c85dd7d" />
+
+- Thêm tên miền cho wordpress và nhập thông tin
+    <img width="41" height="41" alt="image" src="https://github.com/user-attachments/assets/127304d8-1176-4f3c-9b0e-ae923fd6da44" />
+    <img width="779" height="240" alt="image" src="https://github.com/user-attachments/assets/2d87c2e5-d692-4f11-a0a6-d59e9c53d02b" />
 
