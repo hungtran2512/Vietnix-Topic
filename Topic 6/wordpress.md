@@ -14,20 +14,14 @@
   + Vào kiểm tra 
   <img width="1177" height="513" alt="image" src="https://github.com/user-attachments/assets/69849a17-48b4-4568-b44f-5088f7757dae" />
 
-- Vào thư mục document root -> click vào `File Operations` chọn `Remote Download`, tải bản mới của wordpress để lấy môi trường chạy plugin
-  <img width="491" height="297" alt="image" src="https://github.com/user-attachments/assets/ec38ff1e-a9a6-4623-9ce4-b219640511f1" />
+- Upload source wordpress vào aaPanel
+  + Vào mục Files -> vào document root `/www/wwwroot/wp.giahung.vietnix.tech`, click `File Operations` và click `Upload`, chọn file nén source wordpress -> sau khi upload file nén, click chuột phải chọn `unzip`
+  + Vào thư mục wordpress chọn tất cả file, folder và chọn cut -> paste tất cả ra thư mục `wp.giahung.vietnix.tech`
+    <img width="973" height="851" alt="image" src="https://github.com/user-attachments/assets/dba43e2d-6bf0-4b9f-a62f-75e87acbcca7" />
 
-  + Sau khi tải về, giải nén file. Vào thư mục wordpress chọn tất cả file, folder và chọn cut -> paste tất cả ra thư mục `wp.giahung.vietnix.tech`
-  <img width="857" height="655" alt="image" src="https://github.com/user-attachments/assets/c195bc33-4b6f-4732-b6aa-cdda8d917374" />
+- Upload database wordpress
+  + Vào mục `Database`, tìm database đã tạo khi `Add site`, chọn import
+  <img width="834" height="217" alt="image" src="https://github.com/user-attachments/assets/94bb0c78-6884-4244-8064-0599cd09cadb" />
 
-  + Truy cập `http://wp.giahung.vietnix.tech` để nhập thông tin
-  <img width="857" height="655" alt="Screenshot from 2026-04-20 15-35-23" src="https://github.com/user-attachments/assets/c97cbbf3-41ae-412b-9142-1b8f2698b5b0" />
-  <img width="857" height="655" alt="image" src="https://github.com/user-attachments/assets/0425e8a1-ec32-48e8-a02e-5cf08e4dfa2b" />
-
-  + Sau khi thiết lập thành công, vào trang quản trị wordpress chọn `Plugins`, click `Add Plugins` và tìm cài `All-in-One WP Migration`
-  <img width="555" height="599" alt="image" src="https://github.com/user-attachments/assets/3fdc711b-224a-4af8-aca7-f2af06d9265b" />
-
-
-
-  
-
+  + Vào file `wp-config.php` của wordpress chỉnh sửa lại thông tin database
+  <img width="392" height="138" alt="image" src="https://github.com/user-attachments/assets/056f6e2d-90f0-45f1-ac59-c8addf6d9708" />
