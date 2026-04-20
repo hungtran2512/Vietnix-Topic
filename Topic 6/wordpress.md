@@ -26,7 +26,8 @@
 
   + Sau khi thiết lập thành công, vào trang quản trị wordpress chọn `Plugins`, click `Add Plugins` và tìm cài `All-in-One WP Migration`
   <img width="555" height="599" alt="image" src="https://github.com/user-attachments/assets/3fdc711b-224a-4af8-aca7-f2af06d9265b" />
-  
+
+
 
   
 
