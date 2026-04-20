@@ -28,3 +28,9 @@
 
   + Sau khi upload source và import database, vào domain wordpress kiểm tra https://wp.giahung.vietnix.tech/
 <img width="1785" height="929" alt="image" src="https://github.com/user-attachments/assets/d8770874-349a-4183-b7db-112fd8b810d7" />
+
+# Cài đặt Themes và Plugins
+Vào trang portal https://portal.vietnix.vn/index.php?rp=/download để tải themes và plugins
+<img width="1382" height="549" alt="Screenshot from 2026-04-20 17-19-33" src="https://githpluginsub.com/user-attachments/assets/18b43127-be49-4540-bf66-709e871b2376" />
+
+- Tải về `Rank Math SEO`, `Mytheme Shop`, `Elementor`, `Divi Theme`
