@@ -31,6 +31,17 @@
 
 # Cài đặt Themes và Plugins
 Vào trang portal https://portal.vietnix.vn/index.php?rp=/download để tải themes và plugins
-<img width="1382" height="549" alt="Screenshot from 2026-04-20 17-19-33" src="https://githpluginsub.com/user-attachments/assets/18b43127-be49-4540-bf66-709e871b2376" />
+<img width="1382" height="549" alt="Screenshot from 2026-04-20 17-19-33" src="https://github.com/user-attachments/assets/729aaae7-b885-4b0a-b407-600474174a6a" />
 
 - Tải về `Rank Math SEO`, `Mytheme Shop`, `Elementor`, `Divi Theme`
+
+- Divi Theme
+    + Vào trang quản trị wordpress tìm `Appearance` (Giao diện) -> `Add New` (Thêm giao diện mới) -> `Upload Theme` (Tải giao diện lên), chọn file đã tải về của `Divi`.
+    <img width="653" height="338" alt="image" src="https://github.com/user-attachments/assets/11688c59-14fd-431f-bd23-23f1cc23a731" />
+    <img width="1159" height="406" alt="image" src="https://github.com/user-attachments/assets/af498e49-272c-419f-905d-c59d94547f48" />
+    <img width="686" height="327" alt="image" src="https://github.com/user-attachments/assets/bd584e5f-9c2f-474c-81dd-61ad5f95571e" />
+
+    + Kết quả
+    <img width="1613" height="503" alt="image" src="https://github.com/user-attachments/assets/429f13c6-ebaa-4b7f-8972-d87ef48341b2" />
+
+
