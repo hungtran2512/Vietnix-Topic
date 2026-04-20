@@ -25,3 +25,6 @@
 
   + Vào file `wp-config.php` của wordpress chỉnh sửa lại thông tin database
   <img width="392" height="138" alt="image" src="https://github.com/user-attachments/assets/056f6e2d-90f0-45f1-ac59-c8addf6d9708" />
+
+  + Sau khi upload source và import database, vào domain wordpress kiểm tra https://wp.giahung.vietnix.tech/
+<img width="1785" height="929" alt="image" src="https://github.com/user-attachments/assets/d8770874-349a-4183-b7db-112fd8b810d7" />
