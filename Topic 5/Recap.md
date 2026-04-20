@@ -18,6 +18,8 @@
 * **Về Document Root:** Đối với các Framework hiện đại (Laravel), luôn trỏ Document Root vào thư mục `/public` để bảo vệ mã nguồn cốt lõi và các file nhạy cảm (`.env`).
 * **Về Cache:** Nên kiểm tra bằng **Tab ẩn danh (cognitive)** hoặc dùng lệnh **`curl -I`**.
 * **Về Phân quyền:** Thư mục `storage` và `bootstrap/cache` của Laravel cần quyền ghi (**755/775**) để không bị lỗi 500 khi khởi chạy.
+* **Về Cấu Hình:** nhập đúng thông tin database đã tạo, chỉ cần sai 1 kí tự website sẽ không hoạt động
+<img width="1279" height="999" alt="image" src="https://github.com/user-attachments/assets/ae0282f7-104a-49f0-8a9e-9b83e03eae88" />
 
 ---
 
