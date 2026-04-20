@@ -44,4 +44,8 @@ Vào trang portal https://portal.vietnix.vn/index.php?rp=/download để tải t
     + Kết quả
     <img width="1613" height="503" alt="image" src="https://github.com/user-attachments/assets/429f13c6-ebaa-4b7f-8972-d87ef48341b2" />
 
-
+- Plugin (Rank Math, Elementor)
+Vào Plugins -> Add New -> Upload Plugin.
+Tải lên lần lượt các file .zip của Rank Math Pro và Elementor Pro.
+    + Vào trang quản trị wordpress tìm `Plugin` -> `Cài plugin` -> `Tải` plugin lên, chọn file đã tải về
+    <img width="1326" height="846" alt="image" src="https://github.com/user-attachments/assets/b16f5601-a073-44de-95e4-3b60a907796f" />
