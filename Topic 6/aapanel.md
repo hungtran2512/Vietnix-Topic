@@ -18,8 +18,8 @@ Các đặc điểm chính của aaPanel:
   ==================================================================
   Congratulations! Installed successfully!
   ==================================================================
-  aaPanel Internet Address: https://221.132.21.143:24415/ab83be78
-  aaPanel Internal Address: https://221.132.21.143:24415/ab83be78
+  aaPanel Internet Address: https://IP_VPS:24415/ab83be78
+  aaPanel Internal Address: https://IP_VPS:24415/ab83be78
   username: x06lbnix
   password: d67057f3
   Warning:
@@ -32,4 +32,15 @@ Các đặc điểm chính của aaPanel:
   - Trong quá trình cài đặt, firewall đã tự động điều chỉnh và mở các port cần thiết để có thể sử dụng aaPanel trên trình duyệt. Kiểm tra bằng lệnh `ufw status`
   <img width="546" height="472" alt="Screenshot from 2026-04-20 14-01-28" src="https://github.com/user-attachments/assets/2c584746-803a-4066-a56b-dc6095cb5a8b" />
 
-  - 
+  - Truy cập vào aaPanel bằng link và tài khoản mật khẩu hệ thống đã gửi.
+  <img width="546" height="472" alt="image" src="https://github.com/user-attachments/assets/0b63012f-4074-4106-82a0-c31213e870d3" />
+  
+  - Lựa chọn Software Stack:
+    + Web Server: OpenLiteSpeed 1.8
+    + MySQL: chọn MariaDB 10.11 vì nhẹ và ổn định hơn MySQL thuần
+    + PHP: chọn bản 8.1 hoặc 8.2
+    + Chọn quick install sau đó nhấn nút "One-click"
+  <img width="978" height="735" alt="image" src="https://github.com/user-attachments/assets/459779bd-10ab-4992-8dff-671609a53e20" />
+  <img width="802" height="599" alt="image" src="https://github.com/user-attachments/assets/547775d7-c8e1-4ecb-93f7-8eb8f10e7f03" />
+
+
