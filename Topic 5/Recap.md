@@ -2,11 +2,11 @@
 
 ## 1. Nội dung đã thực hiện
 * **Giai đoạn 1: Đóng gói:** Nén mã nguồn bằng lệnh `tar` và xuất cơ sở dữ liệu bằng `mysqldump` từ VPS đã làm ở (Topic 4).
-* **Giai đoạn 2: Chuẩn bị môi trường Hosting:** * Khởi tạo Database và User MySQL trên cPanel.
+* **Giai đoạn 2: Chuẩn bị môi trường Hosting:**  Khởi tạo Database và User MySQL trên cPanel.
     * Cấu hình **Addon Domain** cho Laravel, tách biệt Document Root với WordPress.
-* **Giai đoạn 3: Triển khai:** * Upload và giải nén source qua File Manager.
+* **Giai đoạn 3: Triển khai:**  Upload và giải nén source qua File Manager.
     * Import Database qua phpMyAdmin.
-* **Giai đoạn 4: Cấu hình ứng dụng (Configuration):** Đồng bộ hóa các tệp tin cấu hình (`wp-config.php`, `.env`) để khớp với thông số của Hosting mới.
+* **Giai đoạn 4: Cấu hình ứng dụng:** Đồng bộ hóa các tệp tin cấu hình (`wp-config.php`, `.env`) để khớp với thông số của Hosting mới.
 * **Giai đoạn 5: Bảo mật và Điều hướng:**
     * Cập nhật chứng chỉ SSL Let's Encrypt thủ công.
     * Thiết lập Rewrite Rules và Force HTTPS trong tệp tin `.htaccess`.
