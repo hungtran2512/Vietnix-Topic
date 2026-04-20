@@ -10,5 +10,12 @@
 
   + Kết quả
   <img width="621" height="231" alt="image" src="https://github.com/user-attachments/assets/efa5396b-a982-4be4-a7b5-945c24b289e4" />
+  
   + Vào kiểm tra 
   <img width="1177" height="513" alt="image" src="https://github.com/user-attachments/assets/69849a17-48b4-4568-b44f-5088f7757dae" />
+
+- Vào thư mục document root -> click vào `File Operations` chọn `Remote Download`, tải bản mới của wordpress để lấy môi trường chạy plugin
+  <img width="491" height="297" alt="image" src="https://github.com/user-attachments/assets/ec38ff1e-a9a6-4623-9ce4-b219640511f1" />
+
+  + Sau khi tải về, giải nén file. Vào thư mục wordpress chọn tất cả file, folder và chọn cut -> paste tất cả ra thư mục `wp.giahung.vietnix.tech`
+  <img width="857" height="655" alt="image" src="https://github.com/user-attachments/assets/c195bc33-4b6f-4732-b6aa-cdda8d917374" />
