@@ -19,3 +19,14 @@
 
   + Sau khi tải về, giải nén file. Vào thư mục wordpress chọn tất cả file, folder và chọn cut -> paste tất cả ra thư mục `wp.giahung.vietnix.tech`
   <img width="857" height="655" alt="image" src="https://github.com/user-attachments/assets/c195bc33-4b6f-4732-b6aa-cdda8d917374" />
+
+  + Truy cập `http://wp.giahung.vietnix.tech` để nhập thông tin
+  <img width="857" height="655" alt="Screenshot from 2026-04-20 15-35-23" src="https://github.com/user-attachments/assets/c97cbbf3-41ae-412b-9142-1b8f2698b5b0" />
+  <img width="857" height="655" alt="image" src="https://github.com/user-attachments/assets/0425e8a1-ec32-48e8-a02e-5cf08e4dfa2b" />
+
+  + Sau khi thiết lập thành công, vào trang quản trị wordpress chọn `Plugins`, click `Add Plugins` và tìm cài `All-in-One WP Migration`
+  <img width="555" height="599" alt="image" src="https://github.com/user-attachments/assets/3fdc711b-224a-4af8-aca7-f2af06d9265b" />
+  
+
+  
+
