@@ -36,6 +36,7 @@ III. THÔNG SỐ KỸ THUẬT VÀ VẬN HÀNH
 
 IV. CÁC LOẠI BẢNG ĐIỀU KHIỂN (CONTROL PANEL)
 | Control Panel | Đặc điểm nổi bật | Ứng dụng tiêu biểu |
+| :--- | :--- | :--- |
 | DirectAdmin | Nhẹ, cực kỳ ổn định, tốc độ xử lý nhanh. | Quản lý hosting chuyên nghiệp cho cá nhân và đại lý. |
 | aaPanel | Miễn phí, mã nguồn mở, giao diện đồ họa hiện đại. |Quản lý nhanh các module như Nginx, Docker, Python với 1-click. |
 | CyberPanel | Tích hợp OpenLiteSpeed cho tốc độ vượt trội. | Tối ưu hóa hiệu suất cho các website WordPress (LSCache). |
