@@ -9,8 +9,8 @@ Có dòng `Fatal error: Call to undefined function putenv()`
 1. Phân tích lỗi: Tại sao lại bị Fatal Error?
 - PHP thông báo rằng nó không tìm thấy hàm putenv(). Đây là hàm dùng để thiết lập các biến môi trường (environment variables).
 - Nguyên nhân: Trên aaPanel, vì lý do bảo mật, các hàm có khả năng can thiệp sâu vào hệ thống thường bị đưa vào danh sách "Disabled Functions" (Hàm bị vô hiệu hóa) trong file php.ini. WooCommerce và Google Site Kit cần hàm này để hoạt động, nhưng aaPanel đã chặn nó lại.
-2. Cách xử lý trên aaPanel (Chi tiết từng bước)
-KKhông cần sửa code WordPress, bạn chỉ cần cấu hình lại PHP trên aaPanel để "mở khóa" cho hàm này.
+2. Cách xử lý trên aaPanel
+Không cần sửa code WordPress, chỉ cần cấu hình lại PHP trên aaPanel để mở khóa cho hàm này.
 Bước 1: Truy cập cấu hình PHP
 - Vào aaPanel -> Website.
 - Như trong hình dưới đây - chọn `8.1` (là bản php đã chọn lúc cài đặt) -> Nhấn vào nút Setting.
