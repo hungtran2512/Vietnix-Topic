@@ -14,16 +14,16 @@ Công nghệ dựa trên điện toán đám mây, dữ liệu website được 
 Ưu và nhược: time hoạt động tối đa (1 máy chủ khác sẽ lập tức thay thế cho máy chủ gặp sự cố) -> website không bị gián đoạn; khả năng mở rộng (tự tăng/giảm tài nguyên theo lượng truy cập thực tế) -> website hoạt động mượt mà. Phù hợp website có truy cập biến động cao, các ứng dụng SaaS và dự án yêu cầu độ sẵn sàng cao. Tuy nhiên đòi hỏi phải có kiến thức kỹ thuật cao và chịu được chi phí đắt đỏ để vận hành.
 
 II. ĐỊNH DANH VÀ KẾT NỐI MẠNG
-  5. Địa chỉ IP (IP Address)
+  1. Địa chỉ IP (IP Address)
 Là dãy số định danh duy nhất cho mỗi thiết bị khi kết nối vào internet (ví dụ: 192.168.1.1).
 Vai trò: Giúp các thiết bị nhận diện và giao tiếp với nhau trong môi trường mạng.
-  6. Domain (Tên miền)
+  2. Domain (Tên miền)
 Là địa chỉ định danh thay thế cho dãy số IP khó nhớ (ví dụ: vietnix.vn).
 Vai trò: Giúp người dùng dễ dàng truy cập website thông qua các tên gọi có ý nghĩa.
-  7. Whois
+  3. Whois
 Là một giao thức tra cứu thông tin công khai về chủ sở hữu tên miền.
 Vai trò: Kiểm tra trạng thái đăng ký, ngày hết hạn và thông tin liên hệ của một Domain.
-  8. DNS (Domain Name System)
+  4. DNS (Domain Name System)
 Là hệ thống phân giải tên miền, đóng vai trò như một cuốn danh bạ của internet.
 Vai trò: Chuyển đổi tên miền (ngôn ngữ người dùng) sang địa chỉ IP (ngôn ngữ máy tính).
 
