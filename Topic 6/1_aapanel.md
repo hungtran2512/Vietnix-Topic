@@ -10,12 +10,6 @@ Các đặc điểm chính của aaPanel:
 **aaPanel là lựa chọn phổ biến thay thế cho các bảng điều khiển trả phí như cPanel hay DirectAdmin.**
 
 # Quá trình cài đặt
-  - Để làm topic 6 này, từ terminal (không phải ssh vps) dùng lệnh `sudo nano /etc/hosts` để thêm IP VPS như sau:
-  ```
-  221.132.21.143    wp.giahung.vietnix.tech
-  221.132.21.143    laravel.giahung.vietnix.tech
-  ```
-
   - Đầu tiên chạy lệnh `apt-get update -y && apt-get upgrade -y` để cập nhật hệ thống trên terminal ssh vps
   - Trên terminal ssh vps, chạy lệnh `wget -O install.sh http://www.aapanel.com/script/install-ubuntu_6.0_en.sh && sudo bash install.sh aapanel`
     + Lệnh này sẽ tự cài đặt script aapanel và cấu hình mọi thứ
