@@ -7,6 +7,7 @@ Các đặc điểm chính của aaPanel:
   - Tính năng đa dạng: hỗ trợ quản lý file, tạo database, sao lưu (backup), bảo mật SSL, và quản lý Docker.
   - Nhẹ và Tối ưu: không tiêu tốn quá nhiều tài nguyên máy chủ.
 
+
 **aaPanel là lựa chọn phổ biến thay thế cho các bảng điều khiển trả phí như cPanel hay DirectAdmin.**
 
 # Quá trình cài đặt
