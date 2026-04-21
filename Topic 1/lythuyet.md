@@ -28,34 +28,17 @@ Là hệ thống phân giải tên miền, đóng vai trò như một cuốn dan
 Vai trò: Chuyển đổi tên miền (ngôn ngữ người dùng) sang địa chỉ IP (ngôn ngữ máy tính).
 
 III. THÔNG SỐ KỸ THUẬT VÀ VẬN HÀNH
-Thông số
-Khái niệm
-Ý chính
-Datacenter
-Trung tâm dữ liệu
-Nơi tập trung máy chủ, hệ thống mạng và lưu trữ với tiêu chuẩn an toàn cao.
-CPU
-Bộ vi xử lý trung tâm
-Đóng vai trò "não bộ", xử lý mọi tác vụ và câu lệnh của hệ thống.
-RAM
-Bộ nhớ truy cập ngẫu nhiên
-Lưu trữ dữ liệu tạm thời để CPU xử lý, ảnh hưởng trực tiếp đến tốc độ đa nhiệm.
-
+| Thông số | Khái niệm | Ý chính |
+| :--- | :--- | :--- |
+| Datacenter | Trung tâm dữ liệu | Nơi tập trung máy chủ, hệ thống mạng và lưu trữ với tiêu chuẩn an toàn cao. |
+| CPU | Bộ vi xử lý trung tâm |Đóng vai trò "não bộ", xử lý mọi tác vụ và câu lệnh của hệ thống. |
+| RAM | Bộ nhớ truy cập ngẫu nhiên | Lưu trữ dữ liệu tạm thời để CPU xử lý, ảnh hưởng trực tiếp đến tốc độ đa nhiệm. |
 
 IV. CÁC LOẠI BẢNG ĐIỀU KHIỂN (CONTROL PANEL)
-Control Panel
-Đặc điểm nổi bật
-Ứng dụng tiêu biểu
-DirectAdmin
-Nhẹ, cực kỳ ổn định, tốc độ xử lý nhanh.
-Quản lý hosting chuyên nghiệp cho cá nhân và đại lý.
-aaPanel
-Miễn phí, mã nguồn mở, giao diện đồ họa hiện đại.
-Quản lý nhanh các module như Nginx, Docker, Python với 1-click.
-CyberPanel
-Tích hợp OpenLiteSpeed cho tốc độ vượt trội.
-Tối ưu hóa hiệu suất cho các website WordPress (LSCache).
-
+| Control Panel | Đặc điểm nổi bật | Ứng dụng tiêu biểu |
+| DirectAdmin | Nhẹ, cực kỳ ổn định, tốc độ xử lý nhanh. | Quản lý hosting chuyên nghiệp cho cá nhân và đại lý. |
+| aaPanel | Miễn phí, mã nguồn mở, giao diện đồ họa hiện đại. |Quản lý nhanh các module như Nginx, Docker, Python với 1-click. |
+| CyberPanel | Tích hợp OpenLiteSpeed cho tốc độ vượt trội. | Tối ưu hóa hiệu suất cho các website WordPress (LSCache). |
 
 V. TÓM TẮT LẠI MỐI QUAN HỆ TRONG HỆ THỐNG
 Để một dịch vụ trực tuyến vận hành hoàn chỉnh, cần có:
@@ -63,3 +46,4 @@ V. TÓM TẮT LẠI MỐI QUAN HỆ TRONG HỆ THỐNG
 Hạ tầng: Thuê Shared Hosting/VPS/Dedicated Hosting/Cloud Hosting đặt tại Datacenter (vd: VNPT IDC).
 Định danh: Đăng ký Domain và cấu hình DNS để trỏ về IP của máy chủ.
 Quản trị: Sử dụng Control Panel để vận hành website và các ứng dụng một cách trực quan.
+
