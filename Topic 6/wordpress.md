@@ -41,8 +41,9 @@ Vào trang portal https://portal.vietnix.vn/index.php?rp=/download để tải t
     <img width="1159" height="406" alt="image" src="https://github.com/user-attachments/assets/af498e49-272c-419f-905d-c59d94547f48" />
     <img width="686" height="327" alt="image" src="https://github.com/user-attachments/assets/bd584e5f-9c2f-474c-81dd-61ad5f95571e" />
 
-    + Kết quả
+    + Kết quả và áp dụng vào website wordpress (Lưu ý: vì đang làm lab nên có thể thử nghiệm để xem chức năng, vì theme có thể xung đột với theme có sẵn làm bể giao diện)
     <img width="1418" height="969" alt="image" src="https://github.com/user-attachments/assets/66db08f2-87f1-472a-9524-8d1c57c0bd7c" />
+    <img width="1472" height="877" alt="image" src="https://github.com/user-attachments/assets/da8587fc-f82e-4046-995a-0faf1a11e3b6" />
 
 - Plugin (Rank Math, Elementor, MyTheme Shop)
 Vào Plugins -> Add New -> Upload Plugin.
@@ -61,4 +62,3 @@ Tải lên lần lượt các file .zip của Rank Math Pro, MyTheme Shop và El
   <img width="885" height="256" alt="image" src="https://github.com/user-attachments/assets/c2c7f26b-ed40-42cc-91cb-a56f29141fbf" />
   <img width="531" height="375" alt="image" src="https://github.com/user-attachments/assets/9eb9b3ba-682d-4389-b7f4-2a4c3c15395a" />
   <img width="1793" height="885" alt="image" src="https://github.com/user-attachments/assets/696246cb-898b-45f4-99c3-073ff038b26e" />
-
