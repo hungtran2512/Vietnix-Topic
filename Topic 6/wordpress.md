@@ -62,3 +62,30 @@ Tải lên lần lượt các file .zip của Rank Math Pro, MyTheme Shop và El
   <img width="885" height="256" alt="image" src="https://github.com/user-attachments/assets/c2c7f26b-ed40-42cc-91cb-a56f29141fbf" />
   <img width="531" height="375" alt="image" src="https://github.com/user-attachments/assets/9eb9b3ba-682d-4389-b7f4-2a4c3c15395a" />
   <img width="1793" height="885" alt="image" src="https://github.com/user-attachments/assets/696246cb-898b-45f4-99c3-073ff038b26e" />
+
+## WP-Optimize - Cache và Litespeed Cache
+1. WP-Optimize – Cache:
+WP-Optimize tập trung vào việc tối ưu hóa bên trong WordPress (Database và Hình ảnh) hơn là chỉ tập trung vào tốc độ truy cập
+    <img width="507" height="387" alt="image" src="https://github.com/user-attachments/assets/daa16ab5-b1e0-4d5d-96cf-6d271c6e3425" />
+    <img width="1056" height="838" alt="image" src="https://github.com/user-attachments/assets/ef2b26c0-634e-4551-9c0d-0f1ba2a9cadb" />
+    <img width="1586" height="866" alt="image" src="https://github.com/user-attachments/assets/05eca46d-2775-4630-b78a-845b9994dea6" />
+
+  - Mục đích sử dụng:
+    ```
+    Dọn dẹp Database: Xóa các bản nháp (revisions), bình luận rác (spam), và tối ưu hóa các bảng SQL bị phân mảnh. Điều này giúp MySQL truy vấn dữ liệu nhanh hơn.
+    Nén hình ảnh: Giảm dung lượng file ảnh trực tiếp trên server để tiết kiệm băng thông và dung lượng lưu trữ.
+    Page Cache: Tạo bộ nhớ đệm trang ở tầng ứng dụng (PHP).
+    ```
+
+2. LiteSpeed Cache: "Động cơ tăng tốc" tầng Server
+Đây là plugin mạnh nhất hiện nay khi bạn sử dụng Web Server OpenLiteSpeed
+    
+  - Mục đích sử dụng:
+    ```
+    Server-level Cache: Không giống các plugin khác chạy bằng PHP, LiteSpeed Cache giao tiếp trực tiếp với server. Nó lưu bản sao trang web vào RAM, trả kết quả ngay lập tức mà không cần hỏi PHP hay Database.
+    ối ưu hóa Asset: Gộp và nén CSS/JS (Minify/Combine) cực kỳ thông minh.
+    ESI (Edge Side Includes): Giúp cache được cả những trang có phần nội dung riêng tư (như giỏ hàng, thông tin thành viên).
+    ```
+    
+Khi nào có thể cài LiteSpeed Cache?
+Chỉ nên và bắt buộc cài khi server chạy LiteSpeed hoặc OpenLiteSpeed. Nếu chạy Nginx hay Apache truyền thống, plugin này sẽ không phát huy được sức mạnh "Server-side Cache" cốt lõi của nó.
