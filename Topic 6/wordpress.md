@@ -79,13 +79,25 @@ WP-Optimize tập trung vào việc tối ưu hóa bên trong WordPress (Databas
 
 2. LiteSpeed Cache: "Động cơ tăng tốc" tầng Server
 Đây là plugin mạnh nhất hiện nay khi bạn sử dụng Web Server OpenLiteSpeed
-    
+    <img width="540" height="327" alt="image" src="https://github.com/user-attachments/assets/88333005-f5a2-4c66-9051-53f46562a391" />
+    <img width="1567" height="938" alt="image" src="https://github.com/user-attachments/assets/5c946408-41a5-48ea-8c03-6b8f3d3b990a" />
+
   - Mục đích sử dụng:
     ```
     Server-level Cache: Không giống các plugin khác chạy bằng PHP, LiteSpeed Cache giao tiếp trực tiếp với server. Nó lưu bản sao trang web vào RAM, trả kết quả ngay lập tức mà không cần hỏi PHP hay Database.
-    ối ưu hóa Asset: Gộp và nén CSS/JS (Minify/Combine) cực kỳ thông minh.
+    Tối ưu hóa Asset: Gộp và nén CSS/JS (Minify/Combine) cực kỳ thông minh.
     ESI (Edge Side Includes): Giúp cache được cả những trang có phần nội dung riêng tư (như giỏ hàng, thông tin thành viên).
     ```
     
-Khi nào có thể cài LiteSpeed Cache?
+**Khi nào có thể cài LiteSpeed Cache?**
 Chỉ nên và bắt buộc cài khi server chạy LiteSpeed hoặc OpenLiteSpeed. Nếu chạy Nginx hay Apache truyền thống, plugin này sẽ không phát huy được sức mạnh "Server-side Cache" cốt lõi của nó.
+
+### So sánh WP-Optimize và LiteSpeed Cache
+
+| Tiêu chí | WP-Optimize | LiteSpeed Cache |
+| :--- | :--- | :--- |
+| Tầng hoạt động | Ứng dụng (PHP): Chậm hơn vì vẫn cần CPU xử lý mã nguồn. | Hệ thống (Server): Nhanh nhất vì dữ liệu được trả về ngay từ tầng Web Server. |
+| Thế mạnh nhất | Tối ưu hóa Database, dọn rác, nén ảnh. | Tốc độ load trang cực nhanh, tối ưu hóa CSS/JS/HTML. |
+| Tính tương thích | Mọi loại Server (Nginx, Apache, LiteSpeed). | Tốt nhất trên LiteSpeed/OpenLiteSpeed. |
+| Quản lý Database | Rất mạnh, chi tiết từng bảng. | Cơ bản, không chuyên sâu bằng WP-Optimize. |
+| **Khuyên dùng** | Khi cần bảo trì, dọn rác DB | Luôn bật để tăng tốc độ truy cập |
