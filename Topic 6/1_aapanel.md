@@ -47,5 +47,7 @@ Các đặc điểm chính của aaPanel:
     + PHP: chọn bản 8.1
     + Chọn quick install sau đó nhấn nút "One-click"
   <img width="978" height="735" alt="image" src="https://github.com/user-attachments/assets/459779bd-10ab-4992-8dff-671609a53e20" />
+  
   <img width="802" height="599" alt="image" src="https://github.com/user-attachments/assets/547775d7-c8e1-4ecb-93f7-8eb8f10e7f03" />
+  
   <img width="802" height="320" alt="image" src="https://github.com/user-attachments/assets/52166c64-da22-4089-8c03-24e04bd41fa6" />
