@@ -11,32 +11,32 @@
 <img width="1302" height="523" alt="image" src="https://github.com/user-attachments/assets/857c4cda-5320-47f0-8889-45c7b8993318" />
 
 2. Upload source laravel
-* Vào `List Website`, chọn File Manager của tên miền vừa tạo, upload source wordpress vào
+* Vào `List Website`, chọn File Manager của tên miền vừa tạo, upload source laravel vào
 <img width="1361" height="465" alt="image" src="https://github.com/user-attachments/assets/ffa7139a-336e-4279-96cf-c5325b2e64f5" />
 <img width="1719" height="455" alt="image" src="https://github.com/user-attachments/assets/1aae455b-6467-4283-a651-5607e6fc4d3c" />
 <img width="926" height="867" alt="image" src="https://github.com/user-attachments/assets/a6c3a2c2-a974-4b8a-b167-6efb628e4679" />
 
-* Sau khi giải nén source, thì move các file, folder nằm ngay sau đường dẫn `/home/wp.giahung.vietnix.tech/public_html/`
-<img width="796" height="434" alt="image" src="https://github.com/user-attachments/assets/ca25f8bc-a33d-4113-a5aa-b183ae419a7b" />
-<img width="1666" height="953" alt="image" src="https://github.com/user-attachments/assets/b49e483a-b0e9-4453-af69-c8b0f44e515c" />
+* Sau khi giải nén source, thì move các file, folder nằm ngay sau đường dẫn `/home/laravel.giahung.vietnix.tech/public_html`
+<img width="866" height="472" alt="image" src="https://github.com/user-attachments/assets/33ee0f50-a08b-44c1-9110-e3888fd6ff33" />
+<img width="1614" height="907" alt="image" src="https://github.com/user-attachments/assets/df088e3d-874b-48d2-adfa-f81e2203aaeb" />
 
-3. Import database wordpress
+3. Import database laravel
 * Thêm database, trong mục `Databases` tìm `Create Database`, nhập thông tin vào tạo database
 <img width="239" height="274" alt="image" src="https://github.com/user-attachments/assets/11904ecf-bbc5-4ab7-b341-fc4bad6da09c" />
-<img width="880" height="779" alt="image" src="https://github.com/user-attachments/assets/68c63dfb-9df4-42f4-9039-8919366f1ad2" />
+<img width="967" height="848" alt="image" src="https://github.com/user-attachments/assets/f40f903a-c2b6-405d-a2b4-2f7fbbb6cdfb" />
 
 * Vào phpMyAdmin
-<img width="231" height="285" alt="image" src="https://github.com/user-attachments/assets/e733461c-1fb5-417e-9e51-8adae4e8ddf1" />
+<img width="257" height="339" alt="image" src="https://github.com/user-attachments/assets/dacaf507-a694-40a7-97dc-66fde8c3f194" />
 
 * Chọn database vừa tạo và chọn `Import`, chọn đúng format file để import (ở đây là `sql.zip`)
-<img width="1320" height="366" alt="image" src="https://github.com/user-attachments/assets/4ae04dde-8d81-48c3-89a9-9d547b03ec18" />
-<img width="538" height="47" alt="image" src="https://github.com/user-attachments/assets/7f034938-b898-4e21-abbd-cfacc9e2fa4f" />
+<img width="737" height="410" alt="image" src="https://github.com/user-attachments/assets/437d4f1f-6724-4d7c-b305-281836d9555e" />
+<img width="553" height="50" alt="image" src="https://github.com/user-attachments/assets/6ae28303-b529-47fe-8b08-f30cc46d1f59" />
 
-* Sau khi tạo và import database -> vào file `wp-config.php` để sửa thông tin database như các topic trước
-<img width="663" height="243" alt="image" src="https://github.com/user-attachments/assets/b9b0f612-86fd-4690-8658-3f085516ed15" />
+* Sau khi tạo và import database -> vào file `.env` để sửa thông tin database như các topic trước
+<img width="351" height="97" alt="image" src="https://github.com/user-attachments/assets/9bbc339b-88c1-4e76-aa58-1b6f021f6ae2" />
 
 4. Kiểm tra
-* Truy cập https://wp.giahung.vietnix.tech/
+* Truy cập https://laravel.giahung.vietnix.tech/
 <img width="1794" height="998" alt="image" src="https://github.com/user-attachments/assets/17ef9a3d-34dd-42c6-ba11-d33f0f31c46a" />
 
 5. Dùng lại cert SSL đã tạo từ certbot
