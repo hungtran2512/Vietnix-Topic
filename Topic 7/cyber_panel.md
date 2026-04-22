@@ -10,21 +10,18 @@
 ## II. TRIỂN KHAI HỆ THỐNG CYBERPANEL
 
 ### 1. Cài đặt CyberPanel
-> **Cảnh báo:** Luôn thực hiện Backup toàn bộ dữ liệu (Source + DB) từ hệ thống cũ trước khi cài đặt vì CyberPanel yêu cầu một OS sạch.
-
 * **Lệnh cài đặt:**
 ```bash
 sh <(curl https://cyberpanel.net/install.sh || wget -O - https://cyberpanel.net/install.sh)
 ```
 
 * **Giải thích:**
-    * `curl/wget`: Tải script cài đặt từ server CyberPanel.
-    * `sh / bash`: Thực thi script để tự động cấu hình OpenLiteSpeed, MariaDB, DNS, và Mail Server.
-
+    * `curl/wget`: Tải script cài đặt từ server CyberPanel
+    * `sh / bash`: Thực thi script để tự động cấu hình OpenLiteSpeed, MariaDB, DNS, và Mail Server
+* Chọn các option như trên hình
  <img width="1069" height="871" alt="image" src="https://github.com/user-attachments/assets/60ae3d53-64be-4cc6-99f3-b851bcecac5c" />
- <img width="1228" height="715" alt="image" src="https://github.com/user-attachments/assets/9b2623ff-edc3-4c71-954a-a9f066b1d67c" />
+ <img width="1210" height="716" alt="image" src="https://github.com/user-attachments/assets/b3f17c33-c9fc-46f0-90e8-49d2ce7349d3" />
 
- 
 ### 2. Di trú dữ liệu (Migration)
 * **Mô tả:** Đưa source code WordPress và Laravel vào thư mục mới.
 * **Đường dẫn tuyệt đối:** `/home/[domain_cua_ban]/public_html/`
