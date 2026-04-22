@@ -126,14 +126,17 @@ Administrator's username/password is updated successfully!
 ```
 
 * Bước 2: Khai báo External App (Định nghĩa Port 5000)
-Vào menu Virtual Hosts -> Chọn website (wp.giahung.vietnix.tech).
-Chọn Tab External App.
-Nhấn nút + Add (Dấu cộng góc phải) -> Chọn Type là Web Server.
+- Vào menu Virtual Hosts -> Chọn website `wp.giahung.vietnix.tech`
+<img width="1528" height="529" alt="image" src="https://github.com/user-attachments/assets/2c7bb9d1-7d5e-4e30-b372-28c90ea46421" />
+
+- Chọn Tab External App. Nhấn nút + Add (Dấu cộng góc phải) -> Chọn Type là Web Server.
+<img width="1528" height="529" alt="image" src="https://github.com/user-attachments/assets/389d9033-47b4-4aae-915c-fc6b95d94928" />
+
 Điền các thông số sau:
-Name: python_port_5000
-Address: 127.0.0.1:5000
-Max Connections: 100 (mặc định)
-Nhấn Save (biểu tượng đĩa mềm).
+<img width="1528" height="865" alt="image" src="https://github.com/user-attachments/assets/9606e7d1-a9fc-4677-8c3b-15c3845610b8" />
+
+Nhấn Save
+<img width="56" height="96" alt="image" src="https://github.com/user-attachments/assets/47635aea-1f62-4856-ade9-3e8cf4a01f6f" />
 
 * Bước 3: Tạo Context (Điều hướng /api)
 Chuyển sang Tab Context (ngay bên cạnh tab External App).
