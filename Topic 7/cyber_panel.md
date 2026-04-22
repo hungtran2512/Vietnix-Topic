@@ -60,6 +60,10 @@ sh <(curl https://cyberpanel.net/install.sh || wget -O - https://cyberpanel.net/
    Would you like to restart your server now? [y/N]: y
    ```
 
+* Truy cập https://221.132.21.143:8090 với thông tin đã được cho
+<img width="1641" height="1006" alt="image" src="https://github.com/user-attachments/assets/afb199b5-63df-40fb-98ad-12990bc105d0" />
+<img width="1792" height="1007" alt="image" src="https://github.com/user-attachments/assets/8ec8ee07-dbb6-43e3-be56-84e583e4cbb5" />
+
 ### 2. Di trú dữ liệu (Migration)
 * **Mô tả:** Đưa source code WordPress và Laravel vào thư mục mới.
 * **Đường dẫn tuyệt đối:** `/home/[domain_cua_ban]/public_html/`
