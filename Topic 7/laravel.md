@@ -37,4 +37,4 @@
 
 4. Kiểm tra
 * Truy cập https://laravel.giahung.vietnix.tech/
-<img width="1794" height="998" alt="image" src="https://github.com/user-attachments/assets/17ef9a3d-34dd-42c6-ba11-d33f0f31c46a" />
+<img width="1795" height="923" alt="image" src="https://github.com/user-attachments/assets/9b43ff91-95a1-4c3e-933b-f412e4d79f9c" />
