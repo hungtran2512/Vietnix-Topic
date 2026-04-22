@@ -46,3 +46,5 @@ Các đặc điểm chính của aaPanel:
   <img width="802" height="599" alt="image" src="https://github.com/user-attachments/assets/547775d7-c8e1-4ecb-93f7-8eb8f10e7f03" />
   
   <img width="802" height="320" alt="image" src="https://github.com/user-attachments/assets/52166c64-da22-4089-8c03-24e04bd41fa6" />
+
+Note: khi đỏi từ openlitespeed sang webserver nginx nó cần phải cấu hình rewrite thêm để các trang con không bị 404 vì nó không nhận .htaccess như apache hay ols
