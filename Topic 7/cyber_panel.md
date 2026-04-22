@@ -1,9 +1,7 @@
 # CYBERPANEL & REVERSE PROXY NÂNG CAO
-# CyberPanel
-## I. GIỚI THIỆU TỔNG QUAN (CONCEPT)
+## I. CyberPanel
 * **CyberPanel là gì:** Một Control Panel quản trị Hosting dựa trên nền tảng OpenLiteSpeed, hỗ trợ các công nghệ hiện đại như LSCache, quản lý Docker, và tích hợp sẵn bảo mật.
 * **OpenLiteSpeed (OLS):** Web Server hiệu suất cao, tương thích tốt với WordPress và hỗ trợ các tính năng Proxy mạnh mẽ thông qua giao diện đồ họa.
-* **Mục tiêu bài Lab:** Triển khai hạ tầng CyberPanel, di trú dữ liệu từ aaPanel/VPS cũ và cấu hình ProxyPass để chạy ứng dụng Backend song song với Website.
 
 ---
 
@@ -21,6 +19,46 @@ sh <(curl https://cyberpanel.net/install.sh || wget -O - https://cyberpanel.net/
 * Chọn các option như trên hình
  <img width="1069" height="871" alt="image" src="https://github.com/user-attachments/assets/60ae3d53-64be-4cc6-99f3-b851bcecac5c" />
  <img width="1210" height="716" alt="image" src="https://github.com/user-attachments/assets/b3f17c33-c9fc-46f0-90e8-49d2ce7349d3" />
+
+* Kết quả
+   ```bash
+   [2026-04-22 10:01:56] [INFO] Cleaning up temporary installation files
+   [2026-04-22 10:01:56] [FUNCTION] Starting: Post_Install_Display_Final_Info
+   [2026-04-22 10:01:56] [INFO] Preparing final installation information
+   ###################################################################
+                CyberPanel Successfully Installed                  
+                                                                   
+                Current Disk usage : 8/48GB (19%)                        
+                                                                   
+                Current RAM  usage : 1040/7953MB (13.08%)                         
+                                                                   
+                Installation time  : 0 hrs 12 min 0 sec                 
+                                                                   
+                Visit: https://221.132.21.143:8090                     
+                Panel username: admin                              
+                Panel password: uTKsDAaEcrUz2AKU                        
+                                                                   
+             Run cyberpanel help to get FAQ info
+             Run cyberpanel upgrade to upgrade it to latest version.
+             Run cyberpanel utility to access some handy tools .
+                                                                   
+              Website : https://www.cyberpanel.net                 
+              Forums  : https://forums.cyberpanel.net              
+              Wikipage: https://cyberpanel.net/KnowledgeBase/                
+              Docs    : https://cyberpanel.net/docs/               
+                                                                   
+            Enjoy your accelerated Internet by                  
+                CyberPanel & OpenLiteSpeed 				                     
+   ###################################################################
+   If your provider has a network-level firewall
+   Please make sure you have opened following port for both in/out:
+   TCP: 8090 for CyberPanel
+   TCP: 80, TCP: 443 and UDP: 443 for webserver
+   TCP: 21 and TCP: 40110-40210 for FTP
+   TCP: 25, TCP: 587, TCP: 465, TCP: 110, TCP: 143 and TCP: 993 for mail service
+   TCP: 53 and UDP: 53 for DNS service
+   Would you like to restart your server now? [y/N]: y
+   ```
 
 ### 2. Di trú dữ liệu (Migration)
 * **Mô tả:** Đưa source code WordPress và Laravel vào thư mục mới.
@@ -59,8 +97,6 @@ pm2 start app.js --name "api-backend"
 ---
 
 ## IV. CẤU HÌNH PROXYPASS TRONG OPENLITESPEED
-
-
 
 ### 1. Thiết lập External App
 * **Khái niệm:** Khai báo cho OpenLiteSpeed biết có một ứng dụng bên ngoài đang lắng nghe tại port 5000.
