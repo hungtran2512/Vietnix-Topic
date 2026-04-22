@@ -24,3 +24,6 @@
 
 * Vào phpMyAdmin
 <img width="231" height="285" alt="image" src="https://github.com/user-attachments/assets/e733461c-1fb5-417e-9e51-8adae4e8ddf1" />
+
+* Chọn database vừa tạo và chọn `Import`, chọn đúng format file để import (ở đây là `sql.zip`)
+<img width="1320" height="366" alt="image" src="https://github.com/user-attachments/assets/4ae04dde-8d81-48c3-89a9-9d547b03ec18" />
