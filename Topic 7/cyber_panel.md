@@ -177,24 +177,5 @@ RewriteRule . /index.php [L]
 - Truy cập trình duyệt trên máy cá nhân và truy cập: https://wp.giahung.vietnix.tech/api
 - Kết quả đạt: Nếu màn hình hiện ra nội dung "Hello! Python Port 5000."
 <img width="536" height="170" alt="image" src="https://github.com/user-attachments/assets/3645f9a1-30a1-44db-82d5-a68837badadf" />
-
-    
+  
 ---
-
-## V. KIỂM TRA VÀ TỐI ƯU (TROUBLESHOOTING)
-
-### 1. Kiểm tra trạng thái Port
-```bash
-netstat -tuln | grep 5000
-```
-* **Giải thích:** `-t` (TCP), `-u` (UDP), `-l` (Listen), `-n` (Numeric). Phải thấy port 5000 đang Listen.
-
-### 2. Lỗi thường gặp
-* **Lỗi 502 Bad Gateway:** Ứng dụng Backend (port 5000) chưa chạy hoặc Firewall chặn kết nối nội bộ.
-* **Lỗi SSL Handshake:** Do dán thiếu nội dung trong file `fullchain.pem`.
-
----
-
-## VI. KẾT LUẬN
-* Nắm vững cách vận hành CyberPanel và OpenLiteSpeed.
-* Hiểu rõ cơ chế ProxyPass để triển khai các kiến trúc ứng dụng phức tạp (Microservices).
