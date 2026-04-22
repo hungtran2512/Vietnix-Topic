@@ -1,1 +1,26 @@
+# Deploy WordPress với CyberPanel
+* Sau khi đăng nhập vào CyberPanel, tìm mục `Website` ở thanh bẹn trái -> chọn `Create Website`
+<img width="241" height="372" alt="image" src="https://github.com/user-attachments/assets/f550878f-4b7a-40ae-b3d3-e2e6edc5d301" />
 
+* Nhập thông tin và click `Create Website`
+<img width="900" height="647" alt="image" src="https://github.com/user-attachments/assets/93feded5-8606-458a-b84b-aaeebc3601f4" />
+
+* Kết quả
+<img width="900" height="647" alt="image" src="https://github.com/user-attachments/assets/1166baec-dbc9-443a-b9d6-1442e3546e40" />
+<img width="1302" height="525" alt="image" src="https://github.com/user-attachments/assets/4a4ba2a3-6ec8-4f22-b832-5b51c33b64a6" />
+
+* Vào `List Website`, chọn File Manager của tên miền vừa tạo, upload source wordpress vào
+<img width="1397" height="416" alt="image" src="https://github.com/user-attachments/assets/207db98f-53da-4cf4-8eec-ff7350576976" />
+<img width="1630" height="488" alt="image" src="https://github.com/user-attachments/assets/0ecc7a09-a41e-4e8f-b6bd-b7ccd79f0bed" />
+<img width="796" height="748" alt="image" src="https://github.com/user-attachments/assets/c4ab0cb6-9ddf-4663-9e79-dc9c098824f0" />
+
+* Sau khi giải nén source, thì move các file, folder nằm ngay sau đường dẫn `/home/wp.giahung.vietnix.tech/public_html/`
+<img width="796" height="434" alt="image" src="https://github.com/user-attachments/assets/ca25f8bc-a33d-4113-a5aa-b183ae419a7b" />
+<img width="1666" height="953" alt="image" src="https://github.com/user-attachments/assets/b49e483a-b0e9-4453-af69-c8b0f44e515c" />
+
+* Thêm database, trong mục `Databases` tìm `Create Database`, nhập thông tin vào tạo database
+<img width="239" height="274" alt="image" src="https://github.com/user-attachments/assets/11904ecf-bbc5-4ab7-b341-fc4bad6da09c" />
+<img width="880" height="779" alt="image" src="https://github.com/user-attachments/assets/68c63dfb-9df4-42f4-9039-8919366f1ad2" />
+
+* Vào phpMyAdmin
+<img width="231" height="285" alt="image" src="https://github.com/user-attachments/assets/e733461c-1fb5-417e-9e51-8adae4e8ddf1" />
