@@ -32,3 +32,5 @@
 * Sau khi tạo và import database -> vào file `wp-config.php` để sửa thông tin database như các topic trước
 <img width="663" height="243" alt="image" src="https://github.com/user-attachments/assets/b9b0f612-86fd-4690-8658-3f085516ed15" />
 
+* Truy cập https://wp.giahung.vietnix.tech/
+<img width="1794" height="998" alt="image" src="https://github.com/user-attachments/assets/17ef9a3d-34dd-42c6-ba11-d33f0f31c46a" />
