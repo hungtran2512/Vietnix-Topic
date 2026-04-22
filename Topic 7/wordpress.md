@@ -1,4 +1,5 @@
 # Deploy WordPress với CyberPanel
+1. Tạo website
 * Sau khi đăng nhập vào CyberPanel, tìm mục `Website` ở thanh bẹn trái -> chọn `Create Website`
 <img width="241" height="372" alt="image" src="https://github.com/user-attachments/assets/f550878f-4b7a-40ae-b3d3-e2e6edc5d301" />
 
@@ -9,6 +10,7 @@
 <img width="900" height="647" alt="image" src="https://github.com/user-attachments/assets/1166baec-dbc9-443a-b9d6-1442e3546e40" />
 <img width="1302" height="525" alt="image" src="https://github.com/user-attachments/assets/4a4ba2a3-6ec8-4f22-b832-5b51c33b64a6" />
 
+2. Upload source wordpress
 * Vào `List Website`, chọn File Manager của tên miền vừa tạo, upload source wordpress vào
 <img width="1397" height="416" alt="image" src="https://github.com/user-attachments/assets/207db98f-53da-4cf4-8eec-ff7350576976" />
 <img width="1630" height="488" alt="image" src="https://github.com/user-attachments/assets/0ecc7a09-a41e-4e8f-b6bd-b7ccd79f0bed" />
@@ -18,6 +20,7 @@
 <img width="796" height="434" alt="image" src="https://github.com/user-attachments/assets/ca25f8bc-a33d-4113-a5aa-b183ae419a7b" />
 <img width="1666" height="953" alt="image" src="https://github.com/user-attachments/assets/b49e483a-b0e9-4453-af69-c8b0f44e515c" />
 
+3. Import database wordpress
 * Thêm database, trong mục `Databases` tìm `Create Database`, nhập thông tin vào tạo database
 <img width="239" height="274" alt="image" src="https://github.com/user-attachments/assets/11904ecf-bbc5-4ab7-b341-fc4bad6da09c" />
 <img width="880" height="779" alt="image" src="https://github.com/user-attachments/assets/68c63dfb-9df4-42f4-9039-8919366f1ad2" />
@@ -32,5 +35,6 @@
 * Sau khi tạo và import database -> vào file `wp-config.php` để sửa thông tin database như các topic trước
 <img width="663" height="243" alt="image" src="https://github.com/user-attachments/assets/b9b0f612-86fd-4690-8658-3f085516ed15" />
 
+4. Kiểm tra
 * Truy cập https://wp.giahung.vietnix.tech/
 <img width="1794" height="998" alt="image" src="https://github.com/user-attachments/assets/17ef9a3d-34dd-42c6-ba11-d33f0f31c46a" />
