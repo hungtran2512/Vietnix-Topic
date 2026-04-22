@@ -146,10 +146,7 @@ Nhấn nút + Add -> Chọn Type là Proxy.
 Điền các thông số, nhấn Save
 <img width="1524" height="948" alt="image" src="https://github.com/user-attachments/assets/b4c0c0b5-2dbf-49de-be7c-ca0671fd82c7" />
 
-* Bước 4: Restart OpenLiteSpeed
-Nhấn nút Graceful Restart (Biểu tượng mũi tên tròn màu đỏ ở thanh công cụ phía trên).
-
-* Bước 5: Vào lại CyberPanel, tìm website wordpress -> chọn Manage -> chọn Rewrite Rules và dùng nội dung cấu hình sau
+* Bước 4: Vào lại CyberPanel, tìm website wordpress -> chọn Manage -> chọn Rewrite Rules và dùng nội dung cấu hình sau
 ```
 RewriteEngine On
 RewriteCond %{HTTPS} !=on
@@ -172,6 +169,8 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
 </IfModule>
 ```
+
+* Bước 5: Restart OpenLiteSpeed
 
 3. Kiểm tra kết quả 
 - Truy cập trình duyệt trên máy cá nhân và truy cập: https://wp.giahung.vietnix.tech/api
