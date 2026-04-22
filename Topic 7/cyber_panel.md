@@ -64,16 +64,7 @@ sh <(curl https://cyberpanel.net/install.sh || wget -O - https://cyberpanel.net/
 <img width="1641" height="1006" alt="image" src="https://github.com/user-attachments/assets/afb199b5-63df-40fb-98ad-12990bc105d0" />
 <img width="1792" height="1007" alt="image" src="https://github.com/user-attachments/assets/8ec8ee07-dbb6-43e3-be56-84e583e4cbb5" />
 
-### 2. Di trú dữ liệu (Migration)
-* **Mô tả:** Đưa source code WordPress và Laravel vào thư mục mới.
-* **Đường dẫn tuyệt đối:** `/home/[domain_cua_ban]/public_html/`
-* **Lệnh phân quyền:**
-```bash
-chown -R [user]:[group] /home/[domain_cua_ban]/public_html/
-chmod -R 755 /home/[domain_cua_ban]/public_html/
-```
-
-### 3. Cấu hình SSL từ Certbot cũ
+### 2. Cấu hình SSL từ Certbot cũ
 * **Nguyên nhân:** Tận dụng chứng chỉ ZeroSSL/Certbot đã tạo ở Topic 4 để tránh phải reissue.
 * **Đường dẫn file cũ:** `/etc/letsencrypt/live/[domain]/`
 * **Thao tác:** Copy nội dung `privkey.pem` (Key) và `fullchain.pem` (Certificate) dán vào mục SSL trong CyberPanel.
@@ -82,21 +73,34 @@ chmod -R 755 /home/[domain_cua_ban]/public_html/
 
 ## III. XÂY DỰNG ỨNG DỤNG BACKEND (PORT 5000)
 
-### 1. Khởi tạo ứng dụng Node.js/Python
+### 1. Khởi tạo ứng dụng Python
 * **Mục đích:** Tạo một service chạy ngầm trên port 5000 để mô phỏng hệ thống API.
-* **Mã nguồn mẫu (Node.js):**
-```javascript
-// app.js chạy tại port 5000
+* Tạo thư mục riêng để quản lý
+<img width="525" height="75" alt="image" src="https://github.com/user-attachments/assets/934b3971-c062-4c8e-9642-9aa1aa5b6562" />
+
+* **Mã nguồn mẫu (Python):**
+```python
+from http.server import HTTPServer, BaseHTTPRequestHandler
+
+class SimpleHandler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        self.send_response(200)
+        self.send_header('Content-Type', 'text/plain; charset=utf-8')
+        self.end_headers()
+        self.wfile.write("Hello! Python Port 5000.".encode('utf-8'))
+
+httpd = HTTPServer(('127.0.0.1', 5000), SimpleHandler)
+print("App is running: port 5000...")
+httpd.serve_forever()
 ```
 
-### 2. Quản lý tiến trình bằng PM2
-* **Lệnh:**
+* Để app không bị tắt khi đóng terminal
 ```bash
-pm2 start app.js --name "api-backend"
+nohup python3 app.py > app.log 2>&1 &
 ```
-* **Giải thích:**
-    * `start`: Chạy ứng dụng.
-    * `--name`: Đặt tên dễ quản lý trong danh sách tiến trình.
+
+* Dùng curl kiểm thử app -> app hoạt động tốt
+<img width="683" height="56" alt="image" src="https://github.com/user-attachments/assets/a7fcbb0f-dc01-493b-9d09-b0eb9bcb5ec0" />
 
 ---
 
