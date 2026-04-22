@@ -133,7 +133,7 @@ Administrator's username/password is updated successfully!
 <img width="1528" height="529" alt="image" src="https://github.com/user-attachments/assets/389d9033-47b4-4aae-915c-fc6b95d94928" />
 
 Điền các thông số sau:
-<img width="1528" height="865" alt="image" src="https://github.com/user-attachments/assets/9606e7d1-a9fc-4677-8c3b-15c3845610b8" />
+<img width="1496" height="824" alt="image" src="https://github.com/user-attachments/assets/5fd3cb8a-a33f-4f78-b55d-83a152da5f9d" />
 
 Nhấn Save
 <img width="56" height="96" alt="image" src="https://github.com/user-attachments/assets/47635aea-1f62-4856-ade9-3e8cf4a01f6f" />
@@ -141,19 +141,43 @@ Nhấn Save
 * Bước 3: Tạo Context (Điều hướng /api)
 Chuyển sang Tab Context (ngay bên cạnh tab External App).
 Nhấn nút + Add -> Chọn Type là Proxy.
-Điền các thông số sau:
-URI: /api (Đây là đường dẫn đề bài yêu cầu).
-External App: Chọn python_port_5000 từ danh sách xổ xuống.
-Nhấn Save.
+<img width="1504" height="470" alt="image" src="https://github.com/user-attachments/assets/fbaf4333-abeb-465d-9f12-4428bd046268" />
+
+Điền các thông số, nhấn Save
+<img width="1524" height="948" alt="image" src="https://github.com/user-attachments/assets/b4c0c0b5-2dbf-49de-be7c-ca0671fd82c7" />
 
 * Bước 4: Restart OpenLiteSpeed
 Nhấn nút Graceful Restart (Biểu tượng mũi tên tròn màu đỏ ở thanh công cụ phía trên).
-  
-3. Kiểm tra kết quả (Validation)
-Truy cập trình duyệt trên máy cá nhân và truy cập:
-    https://wp.giahung.vietnix.tech/api
-    Kết quả đạt: Nếu màn hình hiện ra nội dung "Hello! Python Port 5000."
-    Lưu ý: Khi truy cập trang chủ https://wp.giahung.vietnix.tech/, nó vẫn phải hiện trang WordPress bình thường. Chỉ khi thêm /api nó mới nhảy vào Python.
+
+* Bước 5: Vào lại CyberPanel, tìm website wordpress -> chọn Manage -> chọn Rewrite Rules và dùng nội dung cấu hình sau
+```
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
+
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+RewriteRule ^api$ http://127.0.0.1:5000/ [P,L]
+RewriteRule ^api/(.*)$ http://127.0.0.1:5000/$1 [P,L]
+
+RewriteRule ^/(xmlrpc|wp-trackback)\.php - [F,L,NC]
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+```
+
+3. Kiểm tra kết quả 
+- Truy cập trình duyệt trên máy cá nhân và truy cập: https://wp.giahung.vietnix.tech/api
+- Kết quả đạt: Nếu màn hình hiện ra nội dung "Hello! Python Port 5000."
+<img width="536" height="170" alt="image" src="https://github.com/user-attachments/assets/3645f9a1-30a1-44db-82d5-a68837badadf" />
+
     
 ---
 
