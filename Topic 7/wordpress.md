@@ -27,3 +27,8 @@
 
 * Chọn database vừa tạo và chọn `Import`, chọn đúng format file để import (ở đây là `sql.zip`)
 <img width="1320" height="366" alt="image" src="https://github.com/user-attachments/assets/4ae04dde-8d81-48c3-89a9-9d547b03ec18" />
+<img width="538" height="47" alt="image" src="https://github.com/user-attachments/assets/7f034938-b898-4e21-abbd-cfacc9e2fa4f" />
+
+* Sau khi tạo và import database -> vào file `wp-config.php` để sửa thông tin database như các topic trước
+<img width="663" height="243" alt="image" src="https://github.com/user-attachments/assets/b9b0f612-86fd-4690-8658-3f085516ed15" />
+
