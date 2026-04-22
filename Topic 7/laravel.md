@@ -38,12 +38,3 @@
 4. Kiểm tra
 * Truy cập https://laravel.giahung.vietnix.tech/
 <img width="1794" height="998" alt="image" src="https://github.com/user-attachments/assets/17ef9a3d-34dd-42c6-ba11-d33f0f31c46a" />
-
-5. Dùng lại cert SSL đã tạo từ certbot
-* Vào Websites -> List Websites -> chọn Manage
-<img width="1375" height="336" alt="image" src="https://github.com/user-attachments/assets/45fc2f73-3c27-4f62-80a5-5bfbaf3a62a8" />
-
-* Tìm `Configurations` chọn `Add SSL` thêm cert và private key -> nhấn Save
-<img width="1375" height="455" alt="image" src="https://github.com/user-attachments/assets/9f576267-5d69-4d24-91b1-c80092a3da65" />
-<img width="1313" height="628" alt="image" src="https://github.com/user-attachments/assets/210f1f02-f218-4446-b512-0564a40c1495" />
-
