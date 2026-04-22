@@ -105,15 +105,53 @@ nohup python3 app.py > app.log 2>&1 &
 ---
 
 ## IV. CẤU HÌNH PROXYPASS TRONG OPENLITESPEED
+* Truy cập vào giao diện quản trị của OpenLiteSpeed https://221.132.21.143:7080/
+<img width="756" height="656" alt="image" src="https://github.com/user-attachments/assets/75c07d2d-583b-4287-a4e9-25606400f99b" />
 
-### 1. Thiết lập External App
-* **Khái niệm:** Khai báo cho OpenLiteSpeed biết có một ứng dụng bên ngoài đang lắng nghe tại port 5000.
-* **Thông số:** `Address: 127.0.0.1:5000`.
+* Trường hợp không biết thông tin đăng nhập -> nhập lệnh `/usr/local/lsws/admin/misc/admpass.sh`
+```bash
+root@training-giahung:~# /usr/local/lsws/admin/misc/admpass.sh
 
-### 2. Cấu hình Context (URI Mapping)
-* **Giải pháp:** Ánh xạ đường dẫn `/api` về External App vừa tạo.
-* **Cơ chế:** Khi người dùng gọi `domain.com/api`, OLS sẽ đóng vai trò Proxy để forward request tới port 5000.
+Please specify the user name of administrator.
+This is the user name required to login the administration Web interface.
 
+User name [admin]: admin
+
+Please specify the administrator's password.
+This is the password required to login the administration Web interface.
+
+Password: 
+Retype password: 
+Administrator's username/password is updated successfully!
+```
+
+* Bước 2: Khai báo External App (Định nghĩa Port 5000)
+Vào menu Virtual Hosts -> Chọn website (wp.giahung.vietnix.tech).
+Chọn Tab External App.
+Nhấn nút + Add (Dấu cộng góc phải) -> Chọn Type là Web Server.
+Điền các thông số sau:
+Name: python_port_5000
+Address: 127.0.0.1:5000
+Max Connections: 100 (mặc định)
+Nhấn Save (biểu tượng đĩa mềm).
+
+* Bước 3: Tạo Context (Điều hướng /api)
+Chuyển sang Tab Context (ngay bên cạnh tab External App).
+Nhấn nút + Add -> Chọn Type là Proxy.
+Điền các thông số sau:
+URI: /api (Đây là đường dẫn đề bài yêu cầu).
+External App: Chọn python_port_5000 từ danh sách xổ xuống.
+Nhấn Save.
+
+* Bước 4: Restart OpenLiteSpeed
+Nhấn nút Graceful Restart (Biểu tượng mũi tên tròn màu đỏ ở thanh công cụ phía trên).
+  
+3. Kiểm tra kết quả (Validation)
+Truy cập trình duyệt trên máy cá nhân và truy cập:
+    https://wp.giahung.vietnix.tech/api
+    Kết quả đạt: Nếu màn hình hiện ra nội dung "Hello! Python Port 5000."
+    Lưu ý: Khi truy cập trang chủ https://wp.giahung.vietnix.tech/, nó vẫn phải hiện trang WordPress bình thường. Chỉ khi thêm /api nó mới nhảy vào Python.
+    
 ---
 
 ## V. KIỂM TRA VÀ TỐI ƯU (TROUBLESHOOTING)
