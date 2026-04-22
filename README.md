@@ -18,7 +18,7 @@
       * **SSL:** Giao thức bảo mật mã hóa dữ liệu giữa trình duyệt và máy chủ.
   * **Câu lệnh quan trọng:**
       * `ls -al`: Liệt kê file (bao gồm file ẩn) để kiểm tra phân quyền.
-      * `cd /var/www/html`: Di chuyển đến thư mục chứa code website.
+      * `cd /var/www/`: Di chuyển đến thư mục chứa code website.
       * `df -h`: Kiểm tra dung lượng ổ đĩa (để tránh đầy disk gây treo web).
 
 -----
@@ -31,7 +31,7 @@
   * **Thực hành:** Xây dựng website WordPress và Laravel. Cấu hình Remote MySQL.
   * **Lợi ích:** Nginx xử lý các kết nối đồng thời cực tốt, phù hợp cho website có lượng truy cập cao.
   * **Câu lệnh cấu hình:**
-      * Sửa file cấu hình Nginx: `vi /etc/nginx/conf.d/default.conf`
+      * Sửa file cấu hình Nginx: `nano /etc/nginx/conf.d/default.conf`
       * Kiểm tra lỗi syntax trước khi restart: `nginx -t` (Rất quan trọng để tránh làm sập toàn bộ web).
 
 ### Topic 4: Reverse Proxy (Nginx & Apache)
