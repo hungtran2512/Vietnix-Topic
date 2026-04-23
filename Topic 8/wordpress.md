@@ -15,12 +15,12 @@
 ## Upload source wordpress
 - Vì VestaCP không có chức năng upload file cho web nên cần thao tác trên terminal
 ```
-# Đẩy 2 file source web (.tar.gz) từ terminal không phải vps
+# Đẩy file source web (.tar.gz) từ terminal không phải vps
 scp /home/dahunq/*.tar.gz root@221.132.21.143:/home/admin/tmp/
 
 # Từ terminal đang ssh vps
 # Di chuyển file vào đúng thư mục web
-mv /home/admin/tmp/wp_source_v1.tar.gz /home/admin/web/wp.giahung.vietnix.tech/public_html/
+mv /home/admin/tmp/wp_clean.tar.gz /home/admin/web/wp.giahung.vietnix.tech/public_html/
 
 # Giải nén
 cd /home/admin/web/wp.giahung.vietnix.tech/public_html/
