@@ -33,4 +33,4 @@ bash vst-install.sh
 ```
 <img width="907" height="739" alt="image" src="https://github.com/user-attachments/assets/cb1fcebc-44ed-4aba-a58f-75218fb08304" />
 
-* Quá trình cài đặt tốn khoảng 15 phút như trong hình
+* Quá trình cài đặt tốn khoảng 15 phút hoặc lâu hơn
