@@ -20,6 +20,11 @@
 <img width="866" height="472" alt="image" src="https://github.com/user-attachments/assets/33ee0f50-a08b-44c1-9110-e3888fd6ff33" />
 <img width="1614" height="907" alt="image" src="https://github.com/user-attachments/assets/df088e3d-874b-48d2-adfa-f81e2203aaeb" />
 
+* Vào phần quản lý website laravel, tìm vHost Conf -> click vào để chỉnh sửa
+<img width="1383" height="402" alt="image" src="https://github.com/user-attachments/assets/8bd47536-61bb-40ab-8b69-34ada922f250" />
+
+* Tìm dòng `docRoot                   $VH_ROOT/public_html` và chỉnh sửa lại thành `docRoot                   $VH_ROOT/public_html/public` -> nhấn Save
+
 3. Import database laravel
 * Thêm database, trong mục `Databases` tìm `Create Database`, nhập thông tin vào tạo database
 <img width="239" height="274" alt="image" src="https://github.com/user-attachments/assets/11904ecf-bbc5-4ab7-b341-fc4bad6da09c" />
