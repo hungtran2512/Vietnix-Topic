@@ -61,26 +61,25 @@ mv laravel/.[!.]* .
 
 - Website vẫn chưa hoạt động vì laravel cần phiên bản php 8.1
 ```bash
-# Cài đặt công cụ hỗ trợ kho lưu trữ
+# cài công cụ hỗ trợ kho lưu trữ
 apt-get update
 apt-get install software-properties-common -y
 
-
-# Thêm kho PPA của Ondrej (Để lấy các thư viện phụ trợ nhanh hơn)
+# thêm kho PPA của Ondrej
 add-apt-repository ppa:ondrej/php -y
 apt-get update
 
-# Cài đặt thư viện nền cho Giai đoạn 1.2
+# cài đặt thư viện nền
 apt-get install -y build-essential libxml2-dev libssl-dev libsqlite3-dev \
 libcurl4-openssl-dev libpng-dev libjpeg-dev libonig-dev libzip-dev \
 libreadline-dev libicu-dev
 
-# Bắt đầu Giai đoạn biên dịch (Compile)
+# biên dịch thư viện
 wget https://www.php.net/distributions/php-8.1.27.tar.gz
 tar -xvf php-8.1.27.tar.gz
 cd php-8.1.27
 
-# Cấu hình (Configure):
+# Cấu hình:
 ./configure --prefix=/usr/local/php81 \
 --with-config-file-path=/usr/local/php81 \
 --enable-mbstring \
@@ -103,3 +102,75 @@ ln -s /usr/local/php81/bin/php /usr/bin/php81
 <img width="552" height="93" alt="image" src="https://github.com/user-attachments/assets/91a03803-528a-4404-8146-1f6b1c06c717" />
 
 - Các bước trên chỉ mới là cài đặt thủ công cho php 8.1, để VestaCP dùng phiên bản php này cần cấu hình
+* Giai đoạn 1: Cấu hình PHP-FPM
+- Đây là phần quan trọng nhất để PHP có thể nói chuyện được với Web Server.
+
+1. **Chuẩn bị file cấu hình:**
+```bash
+cp /usr/local/php81/etc/php-fpm.conf.default /usr/local/php81/etc/php-fpm.conf
+cp /usr/local/php81/etc/php-fpm.d/www.conf.default /usr/local/php81/etc/php-fpm.d/www.conf
+```
+
+2. **Chỉnh sửa file `www.conf` (Lệnh `nano /usr/local/php81/etc/php-fpm.d/www.conf`):**
+Tìm và sửa chính xác 6 dòng sau (Nhớ **XÓA** dấu `;` ở đầu dòng):
+* `user = admin`
+* `group = admin`
+* `listen = /var/run/php81-fpm.sock`
+* `listen.owner = admin`
+* `listen.group = www-data`  *(Lưu ý dấu gạch ngang `-` nhé)*
+* `listen.mode = 0660`
+
+
+* Giai đoạn 2: Tạo Systemd Service
+- Giúp PHP 8.1 tự khởi động cùng VPS và có thể quản lý bằng lệnh `systemctl`.
+
+1. **Tạo file dịch vụ:** `nano /etc/systemd/system/php81-fpm.service`
+2. **Dán nội dung này vào:**
+```ini
+[Unit]
+Description=The PHP 8.1 FastCGI Process Manager
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/php81/sbin/php-fpm --nodaemonize --fpm-config /usr/local/php81/etc/php-fpm.conf
+ExecReload=/bin/kill -USR2 $MAINPID
+
+[Install]
+WantedBy=multi-user.target
+```
+3. **Kích hoạt dịch vụ:**
+```bash
+systemctl daemon-reload
+systemctl enable php81-fpm
+systemctl restart php81-fpm
+```
+
+* Giai đoạn 3: "Đấu nối" vào Website (Web Server Integration)
+- Để VestaCP biết là phải dùng php 8.1 cho domain laravel.
+1. **Bật module apache:** `a2enmod proxy_fcgi setenvif && systemctl restart apache2`
+2. **Sửa cấu hình domain (Cả file `.conf` và `.ssl.conf` trong `/home/admin/conf/web/`):**
+Thêm đoạn này vào bên trong thẻ `<VirtualHost>`:
+```apache
+<FilesMatch \.php$>
+    SetHandler "proxy:unix:/var/run/php81-fpm.sock|fcgi://localhost"
+</FilesMatch>
+```
+
+3. **Cấp quyền cho Laravel:**
+```bash
+chown -R admin:admin /home/admin/web/laravel.giahung.vietnix.tech/public_html
+chmod -R 775 /home/admin/web/laravel.giahung.vietnix.tech/public_html/storage
+chmod -R 775 /home/admin/web/laravel.giahung.vietnix.tech/public_html/bootstrap/cache
+```
+
+4. Kiểm tra
+```bash
+# Kết quả active (running) là ok
+systemctl status php81-fpm
+# Có hiện file là ok
+ls -la /var/run/php81-fpm.sock
+```
+
+* Kiểm tra https://laravel.giahung.vietnix.tech/
+<img width="1793" height="1007" alt="image" src="https://github.com/user-attachments/assets/6aeedaac-7cd6-43b6-9353-56317415e518" />
