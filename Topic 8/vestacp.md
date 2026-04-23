@@ -21,7 +21,7 @@
 
 - Nhược điểm khi sử dụng VestaCP
   + Sử dụng VestaCP có những mặt hạn chế nào? Một số tính năng và cấu hình sẽ không thể được tùy chỉnh hoặc mở rộng. Điều này dẫn đến việc điều khiển không có tính linh động. 
-  + Bên cạnh đó, nền tảng này chưa được nhiều người biết đến như với cPanel và Plesk. Do đó, người dùng muốn sử dụng VestaCP đều gặp khó khăn vì cộng đồng sử dụng ít. Phần lớn người dùng phải tự tìm hiểu và tự trải nghiệm. 
+  + Bên cạnh đó, nền tảng này chưa được nhiều người biết đến như với cPanel. Do đó, người dùng muốn sử dụng VestaCP đều gặp khó khăn vì cộng đồng sử dụng ít. Phần lớn người dùng phải tự tìm hiểu và tự trải nghiệm. 
 
 # Cài đặt VestaCP
 ```bash
@@ -34,3 +34,28 @@ bash vst-install.sh
 <img width="907" height="739" alt="image" src="https://github.com/user-attachments/assets/cb1fcebc-44ed-4aba-a58f-75218fb08304" />
 
 * Quá trình cài đặt tốn khoảng 15 phút hoặc lâu hơn
+* Kết quả (Lưu ý: dùng ip vps để vào với port 8083 vì domain chưa trỏ tới vps do chỉ đặt để tượng trưng)
+```bash
+=======================================================
+
+ _|      _|  _|_|_|_|    _|_|_|  _|_|_|_|_|    _|_|   
+ _|      _|  _|        _|            _|      _|    _| 
+ _|      _|  _|_|_|      _|_|        _|      _|_|_|_| 
+   _|  _|    _|              _|      _|      _|    _| 
+     _|      _|_|_|_|  _|_|_|        _|      _|    _| 
+
+
+Congratulations, you have just successfully installed Vesta Control Panel
+
+    https://panel.giahung.vietnix.tech:8083
+    username: admin
+    password: R0RSGLdkG1
+
+We hope that you enjoy your installation of Vesta. Please feel free to contact us anytime if you have any questions.
+Thank you.
+
+--
+Sincerely yours
+vestacp.com team
+```
+* Vào trang panel https://221.132.21.143:8083
