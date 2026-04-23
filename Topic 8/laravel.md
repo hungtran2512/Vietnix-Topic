@@ -44,10 +44,17 @@ mv laravel/.[!.]* .
 <img width="536" height="47" alt="image" src="https://github.com/user-attachments/assets/f3090780-d0f9-4686-bcb0-27e585cc204f" />
 
 - Vào file `.env` sửa thông tin database vừa tạo
+<img width="287" height="79" alt="image" src="https://github.com/user-attachments/assets/7fe8f495-be62-4237-aaaa-6edf272ad0a9" />
 
+- Chỉnh sửa file cấu hình apache `nano /home/admin/conf/web/laravel.giahung.vietnix.tech.apache2.conf` tìm `DocumentRoot` và chỉnh sửa đường dẫn thành `/home/admin/web/laravel.giahung.vietnix.tech/public_html/public` - tương tự với file `/home/admin/conf/web/laravel.giahung.vietnix.tech.apache2.ssl.conf`
+- Tương tự với nginx `nano /home/admin/conf/web/laravel.giahung.vietnix.tech.nginx.conf` tìm `root` và chỉnh sửa đường dẫn thành `/home/admin/web/laravel.giahung.vietnix.tech/public_html/public` - tương tự với file `/home/admin/conf/web/laravel.giahung.vietnix.tech.nginx.ssl.conf`
+- Khởi động lại 2 dịch vụ
+  ```bash
+  service apache2 restart
+  service nginx restart
+  ```
+  
+- Tương tự như khi deploy wordpress, trong thư mục laravel, xóa file `index.html`
 
-- Trong thư mục wordpress, xóa file `index.html` (đây là trang mặc định khi tạo từ vestacp thêm domain) vì web server là nginx/apache ưu tiên đọc file `index.html` nên cần xóa đi để đọc file `index.php` của source wordpress để website wordpress hoạt động
-
-- Kiểm tra https://wp.giahung.vietnix.tech/
-<img width="1793" height="979" alt="image" src="https://github.com/user-attachments/assets/206ec75c-579e-4989-8706-894c1f1cb526" />
-
+- Kiểm tra https://laravel.giahung.vietnix.tech/
+<img width="1260" height="540" alt="image" src="https://github.com/user-attachments/assets/d90d5b32-0274-469f-b15c-2efdf20e26a4" />
