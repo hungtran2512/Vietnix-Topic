@@ -34,7 +34,7 @@ bash vst-install.sh
 <img width="907" height="739" alt="image" src="https://github.com/user-attachments/assets/cb1fcebc-44ed-4aba-a58f-75218fb08304" />
 
 * Quá trình cài đặt tốn khoảng 15 phút hoặc lâu hơn
-* Kết quả (Lưu ý: dùng ip vps để vào với port 8083 vì domain chưa trỏ tới vps do chỉ đặt để tượng trưng)
+* Kết quả
 ```bash
 =======================================================
 
@@ -58,4 +58,40 @@ Thank you.
 Sincerely yours
 vestacp.com team
 ```
-* Vào trang panel https://221.132.21.143:8083
+* Lưu ý: dùng ip vps để vào với port 8083 vì domain chưa trỏ tới vps do chỉ đặt để tượng trưng
+
+* Chạy các lệnh sau khi gặp vấn đề không login được
+```bash
+# Khởi động lại dịch vụ quản lý nội bộ của VestaCP
+root@training-giahung:~# service vesta restart
+
+# Mở cổng firewall
+root@training-giahung:~# ufw allow 8083/tcp
+Rules updated
+Rules updated (v6)
+root@training-giahung:~# ufw allow 80/tcp
+Rules updated
+Rules updated (v6)
+root@training-giahung:~# ufw allow 443/tcp
+Rules updated
+Rules updated (v6)
+
+# Kiểm tra và sửa lỗi quyền quản trị tối cao
+root@training-giahung:~# visudo -c
+>>> /etc/sudoers.d/90-cloud-init-users: syntax error near line 20 <<<
+parse error in /etc/sudoers.d/90-cloud-init-users near line 20
+
+# xóa file lỗi sau khi kiểm tra
+root@training-giahung:~# rm -f /etc/sudoers.d/90-cloud-init-users
+
+# kiểm tra lại
+root@training-giahung:~# visudo -c
+/etc/sudoers: parsed OK
+/etc/sudoers.d/README: parsed OK
+/etc/sudoers.d/admin: parsed OK
+```
+
+* Vào trang panel https://221.132.21.143:8083, đăng nhập bằng thông tin đã được cấp
+<img width="1266" height="760" alt="image" src="https://github.com/user-attachments/assets/1eb22ea8-3483-47b2-81f8-43695eb1cede" />
+
+<img width="1794" height="977" alt="Screenshot from 2026-04-23 11-03-03" src="https://github.com/user-attachments/assets/4ee61ea9-2539-41fb-8534-d9b74d6176ae" />
