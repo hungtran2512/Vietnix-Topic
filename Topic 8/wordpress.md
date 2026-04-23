@@ -7,3 +7,5 @@
 <img width="696" height="763" alt="image" src="https://github.com/user-attachments/assets/18578089-51b6-4208-a062-77cfc3d06bb0" />
 <img width="771" height="808" alt="image" src="https://github.com/user-attachments/assets/abc81507-5d2d-4c8a-88d0-08018409db0a" />
 
+* Kết quả
+<img width="675" height="53" alt="image" src="https://github.com/user-attachments/assets/7e7d3df3-d707-4d14-ae49-29e44b125e33" />
