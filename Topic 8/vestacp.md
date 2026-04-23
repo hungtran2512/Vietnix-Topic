@@ -93,4 +93,4 @@ root@training-giahung:~# visudo -c
 
 * Vào trang panel https://221.132.21.143:8083, đăng nhập bằng thông tin đã được cấp
 <img width="1266" height="760" alt="image" src="https://github.com/user-attachments/assets/1eb22ea8-3483-47b2-81f8-43695eb1cede" />
-<img width="1794" height="977" alt="image" src="https://github.com/user-attachments/assets/d9bdca87-1ad1-4d12-a7d9-ba9c8359d009" />
+<img width="1491" height="820" alt="image" src="https://github.com/user-attachments/assets/bae18f98-935c-4c41-9517-7b5f3829af1d" />
