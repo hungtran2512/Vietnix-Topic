@@ -1,4 +1,4 @@
-<img width="1794" height="977" alt="image" src="https://github.com/user-attachments/assets/d9bdca87-1ad1-4d12-a7d9-ba9c8359d009" /># VestaCP
+# VestaCP
 1. VestaCP là gì?
 - VestaCP là một bảng điều khiển quản lý máy chủ Web Hosting miễn phí, mã nguồn mở, được phát triển bởi Vesta Software và phát hành lần đầu tiên vào năm 2009. Nền tảng này dễ cài đặt và cấu hình bảng điều khiển thường được dựa trên nền tảng Linux. Bất cứ ai cũng có thể dùng nền tảng này để quản lý các trang web trong VPS. 
 
@@ -93,3 +93,4 @@ root@training-giahung:~# visudo -c
 
 * Vào trang panel https://221.132.21.143:8083, đăng nhập bằng thông tin đã được cấp
 <img width="1266" height="760" alt="image" src="https://github.com/user-attachments/assets/1eb22ea8-3483-47b2-81f8-43695eb1cede" />
+<img width="1794" height="977" alt="image" src="https://github.com/user-attachments/assets/d9bdca87-1ad1-4d12-a7d9-ba9c8359d009" />
