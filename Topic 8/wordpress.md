@@ -1,5 +1,4 @@
 # Deploy WordPress lên VestaCP
---
 
 ## Tạo domain
 * Vào mục `WEB`, chọn dấu `+` để thêm domain mới
