@@ -58,3 +58,48 @@ mv laravel/.[!.]* .
 
 - Kiểm tra https://laravel.giahung.vietnix.tech/
 <img width="1260" height="540" alt="image" src="https://github.com/user-attachments/assets/d90d5b32-0274-469f-b15c-2efdf20e26a4" />
+
+- Website vẫn chưa hoạt động vì laravel cần phiên bản php 8.1
+```bash
+# Cài đặt công cụ hỗ trợ kho lưu trữ
+apt-get update
+apt-get install software-properties-common -y
+
+
+# Thêm kho PPA của Ondrej (Để lấy các thư viện phụ trợ nhanh hơn)
+add-apt-repository ppa:ondrej/php -y
+apt-get update
+
+# Cài đặt thư viện nền cho Giai đoạn 1.2
+apt-get install -y build-essential libxml2-dev libssl-dev libsqlite3-dev \
+libcurl4-openssl-dev libpng-dev libjpeg-dev libonig-dev libzip-dev \
+libreadline-dev libicu-dev
+
+# Bắt đầu Giai đoạn biên dịch (Compile)
+wget https://www.php.net/distributions/php-8.1.27.tar.gz
+tar -xvf php-8.1.27.tar.gz
+cd php-8.1.27
+
+# Cấu hình (Configure):
+./configure --prefix=/usr/local/php81 \
+--with-config-file-path=/usr/local/php81 \
+--enable-mbstring \
+--enable-fpm \
+--with-mysqli=mysqlnd \
+--with-pdo-mysql=mysqlnd \
+--with-openssl \
+--with-curl \
+--with-zlib \
+--enable-gd \
+--with-zip \
+--enable-bcmath \
+--enable-intl
+
+make -j$(nproc)
+make install
+
+ln -s /usr/local/php81/bin/php /usr/bin/php81
+```
+<img width="552" height="93" alt="image" src="https://github.com/user-attachments/assets/91a03803-528a-4404-8146-1f6b1c06c717" />
+
+- Các bước trên chỉ mới là cài đặt thủ công cho php 8.1, để VestaCP dùng phiên bản php này cần cấu hình
