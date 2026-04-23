@@ -35,16 +35,16 @@ mv laravel/.[!.]* .
 <img width="881" height="755" alt="image" src="https://github.com/user-attachments/assets/a19ed9b4-1fdb-4502-b58c-381a6d1f0075" />
 
 - Trên web quản trị VestaCP, tìm mục DB -> bấm dấu `+` để thêm database cho laravel
-<img width="1348" height="578" alt="image" src="https://github.com/user-attachments/assets/ef2bd118-2a8a-4a03-aebc-37434e86ef3f" />
-<img width="784" height="841" alt="image" src="https://github.com/user-attachments/assets/f6a4c456-19d7-4170-a32c-1133fe555963" />
-<img width="784" height="48" alt="image" src="https://github.com/user-attachments/assets/f0349b3f-712e-4924-840d-da47bd580433" />
+<img width="1312" height="756" alt="image" src="https://github.com/user-attachments/assets/e9edca37-254a-44a0-8077-56461b465128" />
+<img width="890" height="858" alt="image" src="https://github.com/user-attachments/assets/e4dac544-792b-4a82-8ec0-09245c03e0d5" />
+<img width="779" height="43" alt="image" src="https://github.com/user-attachments/assets/485bfb00-f6f7-41df-b5df-9be2bc579f39" />
 
 - Vào phpMyAdmin -> chọn database vừa tạo -> import
-<img width="603" height="292" alt="image" src="https://github.com/user-attachments/assets/a7a43e9d-7529-4f5a-8da0-68c4085cd2f8" />
-<img width="564" height="43" alt="image" src="https://github.com/user-attachments/assets/fd6880ab-657e-45c8-9868-595e1bd1c2ae" />
+<img width="599" height="291" alt="image" src="https://github.com/user-attachments/assets/5a3f2b93-ed2e-4f52-b76f-fa26ed7f8864" />
+<img width="536" height="47" alt="image" src="https://github.com/user-attachments/assets/f3090780-d0f9-4686-bcb0-27e585cc204f" />
 
-- Vào file `wp-config.php` sửa thông tin database vừa tạo
-<img width="424" height="192" alt="image" src="https://github.com/user-attachments/assets/31b0a43e-617f-4d78-b56c-dfa06bbc9ef1" />
+- Vào file `.env` sửa thông tin database vừa tạo
+
 
 - Trong thư mục wordpress, xóa file `index.html` (đây là trang mặc định khi tạo từ vestacp thêm domain) vì web server là nginx/apache ưu tiên đọc file `index.html` nên cần xóa đi để đọc file `index.php` của source wordpress để website wordpress hoạt động
 
