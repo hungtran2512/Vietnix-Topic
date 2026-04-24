@@ -59,7 +59,7 @@ mv laravel/.[!.]* .
 - Kiểm tra https://laravel.giahung.vietnix.tech/
 <img width="1260" height="540" alt="image" src="https://github.com/user-attachments/assets/d90d5b32-0274-469f-b15c-2efdf20e26a4" />
 
-- Website vẫn chưa hoạt động vì laravel cần phiên bản php 8.1
+- Website vẫn chưa hoạt động vì laravel cần phiên bản php 8.1 (làm bằng cách biên dịch từ mã nguồn)
 ```bash
 # cài công cụ hỗ trợ kho lưu trữ
 apt-get update
