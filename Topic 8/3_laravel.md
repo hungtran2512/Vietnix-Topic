@@ -97,6 +97,7 @@ cd php-8.1.27
 make -j$(nproc)
 make install
 
+# Tạo liên kết lệnh php81
 ln -s /usr/local/php81/bin/php /usr/bin/php81
 ```
 <img width="552" height="93" alt="image" src="https://github.com/user-attachments/assets/91a03803-528a-4404-8146-1f6b1c06c717" />
