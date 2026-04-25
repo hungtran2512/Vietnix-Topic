@@ -26,8 +26,9 @@ Tương tự như Apache hay Nginx bên Linux thì IIS là web server trên Wind
 Vì WordPress chạy bằng ngôn ngữ PHP, nên sau khi cài xong IIS, cần cài đặt PHP
 1. Tải và cấu hình **PHP for Windows** vào trang chủ https://www.php.net/downloads.php?os=windows chọn bản php 8.2 tải bản zip `VS16 x64 Non Thread Safe `
 <img width="1055" height="757" alt="image" src="https://github.com/user-attachments/assets/62b180d8-99e2-4c29-a7bb-608ab213f404" />
+
 2. Giải nén và Cấu hình file php.ini
-* Giải nén toàn bộ file Zip PHP
+* Giải nén file Zip PHP, đổi tên thành `php` và đưa về đường dẫn `C:\` -> `C:\php` để dễ quản lý
 * Tìm file php.ini-development, đổi tên nó thành php.ini
 * Mở file php.ini bằng Notepad và tìm rồi sửa các dòng sau (bỏ dấu ; ở đầu dòng):
   ```
@@ -60,8 +61,25 @@ Vì WordPress chạy bằng ngôn ngữ PHP, nên sau khi cài xong IIS, cần c
 
 * Điền chính xác các thông số sau vào bảng hiện ra:
 Request path: *.php
-Module: Chọn FastCgiModule (Nếu không thấy cái này là do lúc nãy chưa cài CGI ở bước cài IIS đấy).
+Module: Chọn FastCgiModule (Nếu không thấy cái này là do lúc nãy chưa cài CGI ở bước cài IIS đấy)
 Executable (Optional): Nhấn vào nút ba chấm ... và tìm đến file php-cgi.exe trong thư mục php
 Name: tên bất kì, ví dụ: PHP_FastCGI
-<img width="463" height="407" alt="image" src="https://github.com/user-attachments/assets/3523b786-8e33-4032-8d4c-210ab2f090d9" />
+<img width="452" height="397" alt="image" src="https://github.com/user-attachments/assets/24391a42-da29-47c5-a0f7-668388210d6a" />
+
+4. Thiết lập file mặc định (Default Document)
+* Tạo thử 1 file info.php để kiểm tra
+* Ở bảng điều khiển chính của Server (TRAINING-GIAHUN)
+* Nhấp đúp vào Default Document
+* Ở cột bên phải, chọn Add... rồi gõ index.php -> Nhấn OK
+<img width="463" height="407" alt="image" src="https://github.com/user-attachments/assets/298bee90-da5b-4bf0-8f84-8d41fb72b4fa" />
+
+5. Cập nhật phiên bản Microsoft Visual C++ lên bản mới vì bản mặc định đã cũ và không tương thích với php
+https://aka.ms/vs/17/release/vc_redist.x64.exe
+<img width="472" height="291" alt="image" src="https://github.com/user-attachments/assets/5450b1c9-3187-402c-af6f-39fa7c171388" />
+
+* Kiểm tra trên cmd phiên bản php
+<img width="440" height="124" alt="image" src="https://github.com/user-attachments/assets/a464534b-e9c5-4d58-a81c-f8d0698d4876" />
+
+* Trên máy remote VPS, truy cập localhost/info.php hoặc http://221.132.21.143/info.php từ máy ngoài -> nếu thành công thì xác nhận được hoạt động ổn -> xóa file info.php
+<img width="1097" height="966" alt="image" src="https://github.com/user-attachments/assets/cc670be3-2cc9-49c3-b0a9-81ede43bd4e8" />
 
