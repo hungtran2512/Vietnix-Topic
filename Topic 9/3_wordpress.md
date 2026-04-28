@@ -3,7 +3,7 @@
 * WordPress cần PHP để chạy và cần một nơi chứa dữ liệu (database).
 * Chuẩn bị mã nguồn
 - Tải bản WordPress mới nhất: [wordpress.org/latest.zip](https://wordpress.org/latest.zip)
-- Giải nén và copy toàn bộ nội dung bên trong thư mục wordpress vào: C:\inetpub\wwwroot
+- Giải nén và copy toàn bộ nội dung bên trong thư mục wordpress vào: `C:\inetpub\wwwroot`
 <img width="687" height="456" alt="image" src="https://github.com/user-attachments/assets/7d522e5f-a982-4cea-8c7a-a97c3d560c7e" />
 <img width="727" height="535" alt="image" src="https://github.com/user-attachments/assets/34f2b2c2-a9de-4ee0-8f5e-9f7f04ef38dd" />
 
