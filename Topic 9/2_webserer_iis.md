@@ -93,4 +93,4 @@ https://aka.ms/vs/17/release/vc_redist.x64.exe
 * Chuột phải vào site, chọn Edit Bindings... -> Add, nhập thông tin và chọn cert self-signed vừa tạo
 <img width="676" height="510" alt="image" src="https://github.com/user-attachments/assets/66e07157-6bd1-4521-821d-e5f3b4939137" />
 
-<img width="1064" height="961" alt="image" src="https://github.com/user-attachments/assets/2ae0832f-83f6-4024-843d-abcf145b2f2f" />
+<img width="1793" height="1000" alt="image" src="https://github.com/user-attachments/assets/64478bab-f7b1-4ec8-8587-09bf6684648f" />
