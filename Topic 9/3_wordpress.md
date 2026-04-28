@@ -14,20 +14,39 @@
 
 - Truy cập lại để kiểm tra -> trang setup của wordpress
 <img width="1408" height="735" alt="image" src="https://github.com/user-attachments/assets/7edfa5f6-b60c-4181-9250-a4cbcaaabbda" />
-<img width="783" height="685" alt="image" src="https://github.com/user-attachments/assets/f0146ded-3bf9-42a8-9abe-7209f594a0b1" />
 
-- Lúc này wordpress sẽ báo lỗi kết nối database -> cài đặt mysql hoặc sql server để có database cho wordpress
-<img width="781" height="468" alt="image" src="https://github.com/user-attachments/assets/cdf436fe-0f79-4cb8-8b6a-0acf13c02c3e" />
+- Lúc này cần có database cho wordpress để hoàn thành website
 
 ## Cài đặt database server
-- Dùng mariadb (là database server tương tự mysql)
-<img width="1431" height="846" alt="image" src="https://github.com/user-attachments/assets/d6d41dd0-6148-4192-8c9c-99662da6e073" />
-<img width="489" height="381" alt="image" src="https://github.com/user-attachments/assets/9409c69e-c84b-47f8-bdb5-661ff83b34fb" />
+- Dùng MySQL
+- Vào trang tải phần mềm, tải bản `mysql-installer-community-5.7.44.0.msi`
+<img width="992" height="726" alt="image" src="https://github.com/user-attachments/assets/28ae7d20-42ae-4d1e-a3a6-740783e0644d" />
+
+- Chọn Server Only -> Execute
+<img width="786" height="589" alt="image" src="https://github.com/user-attachments/assets/25d330a1-6b0d-4a11-b21c-3938eb6edb0f" />
+<img width="786" height="589" alt="image" src="https://github.com/user-attachments/assets/0f1069b9-5395-46d7-981b-f20203bfc9b1" />
+
+- Chọn config type: `Server Computer`
+<img width="786" height="589" alt="image" src="https://github.com/user-attachments/assets/4e204afb-6ea7-4a73-a6a6-7ec9fa8486f9" />
 
 - Chọn Next hết để dùng cấu hình mặc định, đến phần yêu cầu mật khẩu -> nhập mật khẩu để vào database server
-<img width="489" height="381" alt="image" src="https://github.com/user-attachments/assets/50f53432-18ff-4f1e-9653-0130c8926426" />
+<img width="786" height="589" alt="image" src="https://github.com/user-attachments/assets/a08cbde4-9c95-4a3c-a4fc-cc9d5dddb1ce" />
 
-- Chọn next tới phần cài đặt -> nhấn `Installation`
-<img width="489" height="381" alt="image" src="https://github.com/user-attachments/assets/9bcf3ee5-9659-42d8-a83b-c96c7373a132" />
+- Chọn next tới Apply Configuration -> Execute
+<img width="786" height="589" alt="image" src="https://github.com/user-attachments/assets/959fc84c-48e8-439f-ad5c-0eaee83500c1" />
+<img width="786" height="589" alt="image" src="https://github.com/user-attachments/assets/2e76cd7a-34c7-40ca-be02-f40d01c05e81" />
 
+- Vào mysql và tạo database, user
+<img width="244" height="44" alt="image" src="https://github.com/user-attachments/assets/289e4518-1b5d-4f9a-9c8c-bed116495f3e" />
+<img width="518" height="234" alt="image" src="https://github.com/user-attachments/assets/3b2d6443-6635-4b93-8fbe-12347b9b5f1a" />
+
+## Quay lại wordpress để cài đặt
+<img width="848" height="729" alt="image" src="https://github.com/user-attachments/assets/11f44a7e-3924-4d36-bdc4-4ca5c41b6d52" />
+<img width="842" height="330" alt="image" src="https://github.com/user-attachments/assets/62cc34cc-3790-40aa-af1b-6cb4087799ab" />
+<img width="843" height="941" alt="image" src="https://github.com/user-attachments/assets/5f33d5fd-5614-474d-b40a-7e3c32d8ecf8" />
+<img width="843" height="474" alt="image" src="https://github.com/user-attachments/assets/df6f49a0-19fa-4a1a-926f-8820141ae2e8" />
+
+* Kiểm tra website wordpress và trang quản trị
+<img width="1400" height="924" alt="image" src="https://github.com/user-attachments/assets/12d49c5b-7bf6-4405-a607-58991298ba8b" />
+<img width="1802" height="949" alt="image" src="https://github.com/user-attachments/assets/88c81a45-6ef0-4b2a-aed8-be3896177584" />
 
