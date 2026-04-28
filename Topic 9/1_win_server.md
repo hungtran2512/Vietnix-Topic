@@ -1,7 +1,7 @@
 # Windows Server
 ## Truy cập vps win server
 Mặc định Windows Server không cài sẵn dịch vụ SSH như Linux
--Dùng công cụ Remmina: đây là công cụ mặc định và tốt nhất trên Ubuntu để điều khiển máy tính Windows từ xa
+- Dùng công cụ Remmina: đây là công cụ mặc định và tốt nhất trên Ubuntu để điều khiển máy tính Windows từ xa
 1.  Cài đặt: Mở Terminal trên máy Ubuntu và gõ:
     ```bash
     sudo apt update
@@ -31,8 +31,8 @@ Mặc định Windows Server không cài sẵn dịch vụ SSH như Linux
 <img width="1567" height="1017" alt="image" src="https://github.com/user-attachments/assets/76ceb1d4-a4c6-425a-a794-bb95aed71e16" />
 
 - Allow Port & Allow IP
-* Giả sử muốn cho phép Port 80 (Web) hoạt động và chỉ cho phép IP được chỉ định truy cập.
-* Bước 1: Ở cột bên trái, chọn `Inbound Rules`. Sau đó ở cột bên phải, chọn `New Rule`
+    * Giả sử muốn cho phép Port 80 (Web) hoạt động và chỉ cho phép IP được chỉ định truy cập.
+    * Bước 1: Ở cột bên trái, chọn `Inbound Rules`. Sau đó ở cột bên phải, chọn `New Rule`
 <img width="438" height="248" alt="image" src="https://github.com/user-attachments/assets/8aeb78e7-6d86-4e4b-b8df-2b115be4ec25" />
 <img width="341" height="236" alt="image" src="https://github.com/user-attachments/assets/dd828575-fc2e-4e61-8558-adf980185556" />
 
@@ -55,20 +55,20 @@ Mặc định Windows Server không cài sẵn dịch vụ SSH như Linux
 <img width="604" height="655" alt="image" src="https://github.com/user-attachments/assets/e9c4e9e9-6342-4473-b3c2-1ff585bbf443" />
 
 - Block Port & Block IP
-* Việc chặn thường dùng khi thấy hệ thống đang bị tấn công từ một dải IP lạ hoặc muốn đóng các cổng nguy hiểm.
-* Chặn Port (Ví dụ chặn cổng 445)
-
-* Inbound Rules -> New Rule
-* Rule Type: Chọn Port -> Next.
-* Protocol and Ports: Chọn TCP. Gõ cổng 445 -> Next.
+    * Việc chặn thường dùng khi thấy hệ thống đang bị tấn công từ một dải IP lạ hoặc muốn đóng các cổng nguy hiểm
+    * Chặn Port (Ví dụ chặn cổng 445)
+    
+    * Inbound Rules -> New Rule
+    * Rule Type: Chọn Port -> Next
+    * Protocol and Ports: Chọn TCP. Gõ cổng 445 -> Next
 <img width="1292" height="937" alt="image" src="https://github.com/user-attachments/assets/e816526b-a905-488f-b838-14b865a5e62a" />
 
-* Action: Chọn Block the connection -> Next.
+* Action: Chọn Block the connection -> Next
 <img width="1292" height="937" alt="image" src="https://github.com/user-attachments/assets/09dc78e1-9a85-4c89-b5ca-d4ac02b77d91" />
 
 * Profile: Chọn tất cả -> Next.
 
-* Name: đặt tên rule dễ hiểu, ví dụ: block_smb_445 -> Finish.
+* Name: đặt tên rule dễ hiểu, ví dụ: block_smb_445 -> Finish
 * Kết quả
 <img width="592" height="601" alt="image" src="https://github.com/user-attachments/assets/2553e3f6-a3fd-43b7-861b-1fb734f89210" />
 
@@ -81,7 +81,7 @@ Mặc định Windows Server không cài sẵn dịch vụ SSH như Linux
 * Rule Type: chọn Custom -> Next.
 <img width="1282" height="948" alt="image" src="https://github.com/user-attachments/assets/46cdea08-43f5-4344-a9e6-7216e00ac664" />
 
-* Program: Chọn All programs -> Next.
+* Program: Chọn All programs -> Next
 * Protocol and Ports: Chọn Any -> Next
 <img width="1282" height="948" alt="image" src="https://github.com/user-attachments/assets/acd6fcc8-510e-4059-a745-94544173d20c" />
 
