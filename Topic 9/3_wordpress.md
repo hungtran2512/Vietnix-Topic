@@ -1,5 +1,5 @@
 # Wordpress
-## Cài đặt Website WordPress (Mặc định)
+## Cài đặt Website WordPress
 * WordPress cần PHP để chạy và cần một nơi chứa dữ liệu (database).
 * Chuẩn bị mã nguồn
 - Tải bản WordPress mới nhất: [wordpress.org/latest.zip](https://wordpress.org/latest.zip)
@@ -14,3 +14,20 @@
 
 - Truy cập lại để kiểm tra -> trang setup của wordpress
 <img width="1408" height="735" alt="image" src="https://github.com/user-attachments/assets/7edfa5f6-b60c-4181-9250-a4cbcaaabbda" />
+<img width="783" height="685" alt="image" src="https://github.com/user-attachments/assets/f0146ded-3bf9-42a8-9abe-7209f594a0b1" />
+
+- Lúc này wordpress sẽ báo lỗi kết nối database -> cài đặt mysql hoặc sql server để có database cho wordpress
+<img width="781" height="468" alt="image" src="https://github.com/user-attachments/assets/cdf436fe-0f79-4cb8-8b6a-0acf13c02c3e" />
+
+## Cài đặt database server
+- Dùng mariadb (là database server tương tự mysql)
+<img width="1431" height="846" alt="image" src="https://github.com/user-attachments/assets/d6d41dd0-6148-4192-8c9c-99662da6e073" />
+<img width="489" height="381" alt="image" src="https://github.com/user-attachments/assets/9409c69e-c84b-47f8-bdb5-661ff83b34fb" />
+
+- Chọn Next hết để dùng cấu hình mặc định, đến phần yêu cầu mật khẩu -> nhập mật khẩu để vào database server
+<img width="489" height="381" alt="image" src="https://github.com/user-attachments/assets/50f53432-18ff-4f1e-9653-0130c8926426" />
+
+- Chọn next tới phần cài đặt -> nhấn `Installation`
+<img width="489" height="381" alt="image" src="https://github.com/user-attachments/assets/9bcf3ee5-9659-42d8-a83b-c96c7373a132" />
+
+
