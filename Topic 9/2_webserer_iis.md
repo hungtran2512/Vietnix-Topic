@@ -1,5 +1,5 @@
 IIS (Internet Information Services) là một máy chủ web do Microsoft phát triển, chuyên chạy trên hệ điều hành Windows để lưu trữ và cung cấp các ứng dụng web, dịch vụ FTP và các giao thức khác. IIS hỗ trợ việc chuyển tải nội dung trên mạng bằng các giao thức phổ biến như HTTP, HTTPS, FTP, SMTP hay NNTP, giúp các doanh nghiệp, tổ chức dễ dàng quản lý cũng như phân phối nội dung web trên cả môi trường Internet lẫn Intranet.
-Tương tự như Apache hay Nginx bên Linux thì IIS là web server trên Windows.
+- Tương tự như Apache hay Nginx bên Linux thì IIS là web server trên Windows.
 
 **Cài đặt Webserver IIS (Internet Information Services)**
 
@@ -83,3 +83,14 @@ https://aka.ms/vs/17/release/vc_redist.x64.exe
 * Trên máy remote VPS, truy cập localhost/info.php hoặc http://221.132.21.143/info.php từ máy ngoài -> nếu thành công thì xác nhận được hoạt động ổn -> xóa file info.php
 <img width="1097" height="966" alt="image" src="https://github.com/user-attachments/assets/cc670be3-2cc9-49c3-b0a9-81ede43bd4e8" />
 
+## Cấp SSL
+<img width="1081" height="558" alt="image" src="https://github.com/user-attachments/assets/5bb126ad-22a1-44f8-92e8-70b6a07518cf" />
+
+* Ở cột bên phải chọn `Create Self-Signed Certificate...`
+<img width="1090" height="360" alt="image" src="https://github.com/user-attachments/assets/d1d80e41-2fda-430c-8fed-6052392e6abc" />
+<img width="677" height="507" alt="image" src="https://github.com/user-attachments/assets/7f0a63b1-2085-4c83-904f-4035e4ebedd1" />
+
+* Chuột phải vào site, chọn Edit Bindings... -> Add, nhập thông tin và chọn cert self-signed vừa tạo
+<img width="676" height="510" alt="image" src="https://github.com/user-attachments/assets/66e07157-6bd1-4521-821d-e5f3b4939137" />
+
+<img width="1064" height="961" alt="image" src="https://github.com/user-attachments/assets/2ae0832f-83f6-4024-843d-abcf145b2f2f" />
