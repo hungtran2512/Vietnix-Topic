@@ -31,9 +31,11 @@ Các đặc điểm chính của aaPanel:
   ```
 
   - Trong quá trình cài đặt, firewall đã tự động điều chỉnh và mở các port cần thiết để có thể sử dụng aaPanel trên trình duyệt. Kiểm tra bằng lệnh `ufw status`
+
     <img width="546" height="472" alt="Screenshot from 2026-04-20 14-01-28" src="https://github.com/user-attachments/assets/2c584746-803a-4066-a56b-dc6095cb5a8b" />
 
   - Truy cập vào aaPanel bằng link và tài khoản mật khẩu hệ thống đã gửi.
+
     <img width="546" height="472" alt="image" src="https://github.com/user-attachments/assets/0b63012f-4074-4106-82a0-c31213e870d3" />
   
   - Lựa chọn Software Stack:
