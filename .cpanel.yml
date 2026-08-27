@@ -3,4 +3,4 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/wpgiahun/public_html/
     - /bin/cp README.md $DEPLOYPATH
-    - /bin/cp Topic 1 $DEPLOYPATH
+    - /bin/cp iScreen Shoter - Brave Browser - 260730111754.jpg $DEPLOYPATH
